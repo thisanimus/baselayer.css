@@ -1,23 +1,18 @@
-code {
+code,
+pre {
 	font-family: var(--font-monospace);
-	//background: $color-tertiary;
-	//border-radius: .4rem;
-	//font-size: 86%;
-	//margin: 0 .2rem;
-	//padding: .2rem .5rem;
+	background: var(--color-background-intense);
+	padding: 0.25rem;
+}
+code {
 	white-space: nowrap;
 }
 
 pre {
-	font-family: var(--font-monospace);
-	//background: $color-tertiary;
-	//border-left: .3rem solid $color-primary;
 	overflow-y: hidden;
-
 	& > code {
-		border-radius: 0;
 		display: block;
-		padding: 1rem 1.5rem;
+		padding: var(--space-sm);
 		white-space: pre;
 	}
 }
