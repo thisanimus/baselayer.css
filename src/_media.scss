@@ -1,0 +1,17 @@
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.responsive-embed {
+	> * {
+		height: 100%;
+		width: 100%;
+	}
+	.embed-16-9 {
+		aspect-ratio: 16 / 9;
+	}
+	.embed-4-3 {
+		aspect-ratio: 4 / 3;
+	}
+}

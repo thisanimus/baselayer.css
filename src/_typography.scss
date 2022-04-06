@@ -1,0 +1,62 @@
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 600;
+	line-height: 1;
+	margin: 0 0 1rem 0;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 1;
+}
+h2 {
+	font-size: 2rem;
+	position: relative;
+}
+h3 {
+	font-size: 1.5rem;
+}
+h4 {
+	font-size: 1.25rem;
+}
+
+p {
+	margin: 0.75em 0;
+	max-width: 60ch;
+}
+em {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+:where(h1, h2, h3, h4, h5, ol, ul) + :where(p, ul:not([class]), ol:not([class])) {
+	margin-top: var(--space-sm);
+}
+:where(p, ul:not([class]), ol:not([class])) {
+	& + h1,
+	& + h2,
+	& + h3,
+	& + h4,
+	& + h5,
+	& + h6 {
+		margin-top: var(--space-md);
+	}
+}
+mark {
+	background: #fff176;
+}
+
+.hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}

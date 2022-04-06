@@ -1,0 +1,11 @@
+a:not(.button) {
+	font-weight: 600;
+	color: var(--color-link-default);
+	&:hover,
+	&:focus {
+		color: var(--color-link-hover);
+	}
+	&:visited {
+		color: var(--color-link-visited);
+	}
+}

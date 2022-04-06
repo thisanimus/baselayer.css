@@ -1,0 +1,32 @@
+{
+	"name": "baselayer",
+	"version": "1.0.0",
+	"description": "A stylish CSS reset",
+	"main": "index.html",
+	"scripts": {
+		"watch:sync": "browser-sync start --server --files 'index.html', '*.css'",
+		"watch:sass": "npx sass src/style.scss:dist/style.css --style=compressed --watch --load-path=./",
+		"start": "npm run watch:sass & npm run watch:sync"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thisanimus/baselayer.git"
+	},
+	"keywords": [
+		"css",
+		"reset",
+		"scss",
+		"mini",
+		"framework"
+	],
+	"author": "Andrew Hale",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/thisanimus/baselayer/issues"
+	},
+	"homepage": "https://github.com/thisanimus/baselayer#readme",
+	"devDependencies": {
+		"browser-sync": "latest",
+		"sass": "latest"
+	}
+}
