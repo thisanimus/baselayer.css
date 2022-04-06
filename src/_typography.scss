@@ -108,6 +108,14 @@ ol:not([class]) {
 		margin: 1rem 0 0 1rem;
 	}
 }
+
+hr {
+	border: none;
+	height: var(--border-width);
+	background: var(--color-background-muted);
+	width: 100%;
+	margin: var(--space-md) 0;
+}
 blockquote {
 	background: var(--color-background-intense);
 	border-left: var(--border-width) solid currentColor;
