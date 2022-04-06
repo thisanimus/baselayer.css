@@ -108,3 +108,16 @@ ol:not([class]) {
 		margin: 1rem 0 0 1rem;
 	}
 }
+blockquote {
+	background: var(--color-background-intense);
+	border-left: var(--border-width) solid currentColor;
+	padding: var(--space-sm);
+	> :first-child {
+		padding-top: 0;
+		margin-top: 0;
+	}
+	> :last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}

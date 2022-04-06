@@ -1,18 +1,18 @@
 code,
 pre {
 	font-family: var(--font-monospace);
-	background: var(--color-background-intense);
-	padding: 0.25rem;
 }
 code {
 	white-space: nowrap;
 }
 
 pre {
+	padding: var(--space-sm);
+	background: var(--color-background-intense);
 	overflow-y: hidden;
 	& > code {
+		margin: 0;
 		display: block;
-		padding: var(--space-sm);
 		white-space: pre;
 	}
 }
