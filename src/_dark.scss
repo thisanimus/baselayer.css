@@ -1,0 +1,19 @@
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-text-muted: var(--color-light-muted);
+		--color-text: var(--color-light);
+		--color-text-intense: var(--color-light-intentse);
+
+		--color-ui-muted: hsl(200, 18%, 30%);
+		--color-ui: hsl(200, 15%, 50%);
+		--color-ui-intense: hsl(200, 15%, 70%);
+
+		--color-background-muted: var(--color-dark-muted);
+		--color-background: var(--color-dark);
+		--color-background-intense: var(--color-dark-intense);
+
+		--color-link-default: #64b5f6;
+		--color-link-hover: #bbdefb;
+		--color-link-visited: #ce93d8;
+	}
+}
