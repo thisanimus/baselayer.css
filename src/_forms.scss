@@ -6,6 +6,7 @@ input[type="date"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="email"],
+input[type="file"],
 input[type="month"],
 input[type="number"],
 input[type="password"],
@@ -40,6 +41,12 @@ select {
 ::placeholder {
 	color: var(--color-ui);
 }
+input[type="file"] {
+	padding-top: 0.4rem;
+	padding-top: 0.4rem;
+	display: flex;
+	align-items: center;
+}
 
 select {
 	background: rgba(255, 255, 255, 0.4)
@@ -67,7 +74,6 @@ label {
 }
 label,
 .label {
-	color: var(--color-ui-intense);
 	font-size: 0.8rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
