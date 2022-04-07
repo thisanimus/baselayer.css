@@ -38,9 +38,6 @@ a {
 	&:focus {
 		color: var(--color-link-hover);
 	}
-	&:visited {
-		color: var(--color-link-visited);
-	}
 }
 
 :where(h1, h2, h3, h4, h5, ol, ul) + :where(p, ul:not([class]), ol:not([class])) {
