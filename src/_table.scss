@@ -8,38 +8,32 @@ table {
 table caption {
 	text-align: left;
 }
+tr {
+}
 
 td,
 th {
+	text-align: left;
 	padding: 0.25rem 0.5rem;
-	text-align: right;
 	vertical-align: top;
 	word-wrap: break-word;
 }
 
 thead {
-	border-bottom: var(--border-width) solid var(--color-ui-muted);
+	border-bottom: var(--border-width) solid var(--color-background-muted);
 	th {
 		vertical-align: bottom;
-	}
-	tr > :first-child {
-		text-align: left;
 	}
 }
 
 tfoot {
-	border-top: var(--border-width) solid var(--color-ui-muted);
-}
-tbody {
-	th {
-		text-align: left;
-	}
+	border-top: var(--border-width) solid var(--color-background-muted);
 }
 
 tbody tr:nth-child(odd) {
-	background-color: var(--color-background-muted);
+	background-color: var(--color-background-intense);
 }
 
 tbody tr:nth-child(even) {
-	background-color: var(--color-background-intense);
+	background-color: var(--color-background);
 }
