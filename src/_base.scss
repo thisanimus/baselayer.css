@@ -18,6 +18,7 @@
 	--color-background-muted: var(--color-light-muted);
 	--color-background: var(--color-light);
 	--color-background-intense: var(--color-light-intense);
+	--color-background-card: var(--color-light-intense);
 
 	--color-primary-muted: hsl(208, 50%, 40%);
 	--color-primary: hsl(208, 58%, 32%);
@@ -78,6 +79,9 @@ body {
 [data-background="light"] {
 	background-color: var(--color-light-intense);
 	color: var(--color-dark);
+}
+[data-background="card"] {
+	background: var(--color-background-card);
 }
 [data-text="dark"] {
 	color: var(--color-dark);
