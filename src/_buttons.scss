@@ -32,7 +32,7 @@ input[type="submit"] {
 		--button-background: var(--color-primary-intense);
 	}
 	&[disabled] {
-		--button-background: var(--color-ui-intense);
+		--button-background: var(--color-ui-muted);
 		cursor: default;
 	}
 	&.button-secondary {
@@ -40,6 +40,15 @@ input[type="submit"] {
 		&:hover,
 		&:focus {
 			--button-background: var(--color-secondary-intense);
+		}
+	}
+	&.button-accent {
+		--button-background: var(--color-accent);
+		--button-color: var(--color-dark);
+		&:hover,
+		&:focus {
+			--button-background: var(--color-accent-intense);
+			--button-color: var(--color-dark);
 		}
 	}
 }
