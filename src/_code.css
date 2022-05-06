@@ -10,9 +10,9 @@ pre {
 	padding: var(--space-sm);
 	background: var(--color-background-intense);
 	overflow-y: hidden;
-	& > code {
-		margin: 0;
-		display: block;
-		white-space: pre;
-	}
+}
+pre > code {
+	margin: 0;
+	display: block;
+	white-space: pre;
 }

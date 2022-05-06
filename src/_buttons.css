@@ -1,0 +1,47 @@
+.button,
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	--button-background: var(--color-primary);
+	--button-color: var(--color-light);
+	background-color: var(--button-background);
+	color: var(--button-color);
+	border: var(--border-width) solid var(--button-background);
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	display: inline-block;
+	font-family: var(--font-sans);
+	font-weight: 800;
+	font-size: 0.8rem;
+	line-height: 1;
+	height: 2.5rem;
+	padding: 0.75rem;
+	letter-spacing: 0.15rem;
+	padding: 0.75rem 2rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+a.button:where(:hover, :focus) {
+	color: var(--button-color) !important;
+}
+:is(.button, button, [type='button'], [type='reset'], [type='submit']):where(:hover, :focus) {
+	--button-background: var(--color-primary-intense);
+}
+
+.button-secondary {
+	--button-background: var(--color-secondary);
+}
+.button-secondary:where(:hover, :focus) {
+	--button-background: var(--color-secondary-intense);
+}
+
+.button-accent {
+	--button-color: var(--color-dark);
+	--button-background: var(--color-accent);
+}
+.button-accent:where(:hover, :focus) {
+	--button-background: var(--color-accent-intense);
+}

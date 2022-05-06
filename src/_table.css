@@ -8,8 +8,6 @@ table {
 table caption {
 	text-align: left;
 }
-tr {
-}
 
 td,
 th {
@@ -21,9 +19,9 @@ th {
 
 thead {
 	border-bottom: var(--border-width) solid var(--color-background-muted);
-	th {
-		vertical-align: bottom;
-	}
+}
+thead th {
+	vertical-align: bottom;
 }
 
 tfoot {

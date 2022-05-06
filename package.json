@@ -5,7 +5,7 @@
 	"main": "index.html",
 	"scripts": {
 		"watch:sync": "browser-sync start --server --files 'index.html', '*.css'",
-		"watch:sass": "npx sass src/style.scss:dist/style.css --style=compressed --watch --load-path=./",
+		"watch:sass": "npx sass src/style.scss:dist/style.css src/light.scss:dist/style-light.css src/dark.scss:dist/style-dark.css --style=compressed --watch --load-path=./",
 		"start": "npm run watch:sass & npm run watch:sync"
 	},
 	"repository": {

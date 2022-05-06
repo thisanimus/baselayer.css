@@ -1,0 +1,18 @@
+:root {
+	--color-text-muted: var(--color-dark-muted);
+	--color-text: var(--color-dark);
+	--color-text-intense: var(--color-dark-intentse);
+
+	--color-ui-muted: #b7bbbe;
+	--color-ui: #808d93;
+	--color-ui-intense: #5c6a70;
+
+	--color-background-muted: var(--color-light-muted);
+	--color-background: var(--color-light);
+	--color-background-intense: var(--color-light-intense);
+	--color-background-card: var(--color-light-intense);
+
+	--color-link-default: #1565c0;
+	--color-link-hover: #0d47a1;
+	--color-link-visited: #7b1fa2;
+}

@@ -213,9 +213,7 @@
       </p>
       <p>
         <strong>Block Code:</strong>
-      <pre>
-			<code>&lt;div&gt;code&lt;/div&gt;</code>
-			</pre>
+      <pre><code>&lt;div&gt;code&lt;/div&gt;</code></pre>
       </p>
       <p>
         <strong>Sample output:</strong>
@@ -370,12 +368,19 @@ P R E F O R M A T T E D T E X T
       <form>
         <fieldset id="forms-input">
           <legend>Input fields</legend>
-          <label for="input-text">Text Input</label>
-          <input id="input-text" placeholder="Text Input" type="text" />
+          
           <label for="input-password">Password</label>
           <input id="input-password" placeholder="Type your Password" type="password" />
           <label for="input-webaddress">Web Address</label>
           <input id="input-webaddress" placeholder="http://yoursite.com" type="url" />
+          <div class="form-row">
+            <label>First Name
+              <input id="first_name" placeholder="Joe" type="text" />
+            </label>
+            <label>Blow
+              <input id="first_name" placeholder="Blow" type="text" />
+            </label>
+          </div>
           <label for="input-emailaddress">Email Address</label>
           <input id="input-emailaddress" placeholder="name@email.com" type="email" />
           <label for="input-phone">Phone Number</label>
@@ -410,34 +415,34 @@ P R E F O R M A T T E D T E X T
           <legend>Checkboxes</legend>
           <ul class="list list--bare">
             <li>
-              <label for="checkbox1"><input checked="checked" id="checkbox1" name="checkbox" type="checkbox" /> Choice
-                A</label>
+              <input checked="checked" id="checkbox1" name="checkbox" type="checkbox" /> 
+              <label for="checkbox1">Choice A</label>
             </li>
             <li>
-              <label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox" /> Choice B</label>
+              <input id="checkbox2" name="checkbox" type="checkbox" /> 
+              <label for="checkbox2">Choice B</label>
             </li>
             <li>
-              <label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox" /> Choice C</label>
+              <input id="checkbox3" name="checkbox" type="checkbox" />
+              <label for="checkbox3">Choice C</label>
             </li>
           </ul>
         </fieldset>
         <p><a href="#top">[Top]</a></p>
         <fieldset id="forms-radio">
           <legend>Radio buttons</legend>
-          <ul class="list list--bare">
-            <li>
-              <label for="radio1"><input checked="checked" class="radio" id="radio1" name="radio" type="radio" /> Option
-                1</label>
-            </li>
-            <li>
-              <label for="radio2"><input class="radio" id="radio2" name="radio" type="radio" /> Option
-                2</label>
-            </li>
-            <li>
-              <label for="radio3"><input class="radio" id="radio3" name="radio" type="radio" /> Option
-                3</label>
-            </li>
-          </ul>
+          <div>
+            <input checked="checked" class="radio" id="radio1" name="radio" type="radio" />
+            <label for="radio1">Option 1</label>
+          </div>
+          <div>
+            <input checked="checked" class="radio" id="radio2" name="radio" type="radio" />
+            <label for="radio2">Option 2</label>
+          </div>
+          <div>
+            <input checked="checked" class="radio" id="radio3" name="radio" type="radio" />
+            <label for="radio3">Option 3</label>
+          </div>
         </fieldset>
         <p><a href="#top">[Top]</a></p>
         <fieldset id="forms-textareas">
@@ -473,7 +478,7 @@ P R E F O R M A T T E D T E X T
           <legend>Action buttons</legend>
           <p>
             <input type="submit" class="button-primary" value="&lt;input type=submit&gt;" />
-            <input type="button" class="button-secondary" value="&lt;input type=button&gt;" />
+            <input type="button" class="button-secondary" data-button-color="secondary" value="&lt;input type=button&gt;" />
             <input type="button" class="button-accent" value="&lt;input type=button&gt;" />
             <input type="reset" value="&lt;input type=reset&gt;" />
             <input disabled type="submit" value="&lt;input disabled&gt;" />
