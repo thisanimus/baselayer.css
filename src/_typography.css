@@ -42,7 +42,7 @@ a:where(:hover, :focus) {
 :where(h1, h2, h3, h4, h5, ol, ul) + :where(p, ul:not([class]), ol:not([class])) {
 	margin-top: var(--space-sm);
 }
-:where(p, ul:not([class]), ol:not([class])) + :where(h1, h2, h3, h4, h5, h6) {
+:where(p, ul:not([class]), ol:not([class])) + :is(h1, h2, h3, h4, h5, h6) {
 	margin-top: var(--space-md);
 }
 mark {
@@ -99,6 +99,7 @@ blockquote {
 	background: var(--color-background-intense);
 	border-left: var(--border-width) solid currentColor;
 	padding: var(--space-sm);
+	margin: var(--space-sm) 0;
 }
 blockquote > :first-child {
 	padding-top: 0;
