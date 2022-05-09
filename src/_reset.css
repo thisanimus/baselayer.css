@@ -15,7 +15,6 @@
 /*
 	3. Allow percentage-based heights in the application
   */
-html,
 body {
 	height: 100%;
 }
