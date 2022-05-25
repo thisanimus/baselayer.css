@@ -39,7 +39,8 @@ a:where(:hover, :focus) {
 	color: var(--color-link-hover);
 }
 
-:where(h1, h2, h3, h4, h5, ol, ul) + :where(p, ul:not([class]), ol:not([class])) {
+:where(h1, h2, h3, h4, h5, ol, ul)
+	+ :where(p, ul:not([class]), ol:not([class]), pre, code, blockquote) {
 	margin-top: var(--space-sm);
 }
 :where(p, ul:not([class]), ol:not([class])) + :is(h1, h2, h3, h4, h5, h6) {
