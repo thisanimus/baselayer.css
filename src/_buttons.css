@@ -11,18 +11,13 @@ button,
 	border-radius: var(--border-radius);
 	cursor: pointer;
 	display: inline-block;
-	font-family: var(--font-sans);
-	font-weight: 800;
-	font-size: 0.8rem;
-	line-height: 1;
-	height: 2.5rem;
-	padding: 0.75rem;
-	letter-spacing: 0.15rem;
-	padding: 0.75rem 2rem;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
 	white-space: nowrap;
+	font: 600 0.8rem/1 var(--font-sans);
+	height: 2rem;
+	padding: 0.5rem 1rem;
+	transition: background-color 150ms, border-color 150ms;
 }
 a.button:where(:hover, :focus) {
 	color: var(--button-color) !important;
@@ -44,4 +39,10 @@ a.button:where(:hover, :focus) {
 }
 .button-accent:where(:hover, :focus) {
 	--button-background: var(--color-accent-intense);
+}
+.button-group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: var(--space-sm) 0;
 }

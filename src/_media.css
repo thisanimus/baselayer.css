@@ -10,7 +10,11 @@ img {
 
 .embed-16-9 {
 	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
 }
 .embed-4-3 {
 	aspect-ratio: 4 / 3;
+	height: 100%;
+	width: 100%;
 }

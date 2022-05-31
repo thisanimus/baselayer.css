@@ -44,7 +44,7 @@ body {
 	background-color: var(--color-background);
 }
 .container {
-	max-width: 48rem;
+	max-width: 40rem;
 	margin: 0 auto;
 	padding: var(--space-md);
 }
