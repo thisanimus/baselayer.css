@@ -26,6 +26,12 @@ a.button:where(:hover, :focus) {
 	--button-background: var(--color-primary-intense);
 }
 
+:is(.button, button, [type='button'], [type='reset'], [type='submit']):where([disabled]) {
+	filter: saturation(0);
+	pointer-events: none;
+	cursor: not-allowed;
+}
+
 .button-secondary {
 	--button-background: var(--color-secondary);
 }
