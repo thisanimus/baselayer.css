@@ -27,7 +27,7 @@ a.button:where(:hover, :focus) {
 }
 
 :is(.button, button, [type='button'], [type='reset'], [type='submit']):where([disabled]) {
-	filter: saturation(0);
+	filter: saturate(0);
 	pointer-events: none;
 	cursor: not-allowed;
 }
