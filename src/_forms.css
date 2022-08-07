@@ -44,9 +44,8 @@ textarea {
 	display: flex;
 	align-items: center;
 }
-
 select {
-	background: var(--color-background)
+	background: transparent
 		url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="rgba(125,125,125,0.5)" d="M0,0l6,8l6-8"/></svg>')
 		center right no-repeat;
 }
