@@ -1,6 +1,6 @@
 {
 	"name": "baselayer",
-	"version": "1.0.19",
+	"version": "1.0.20",
 	"description": "A stylish CSS reset",
 	"main": "index.html",
 	"scripts": {
