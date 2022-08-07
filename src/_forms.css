@@ -24,7 +24,7 @@ select {
 	width: 100%;
 	font: 400 0.9rem/1 var(--font-sans);
 	height: 2rem;
-	padding: 0.5rem 0.5rem;
+	padding: .1rem 0.5rem;
 	margin: 0.25em 0 0.75em 0;
 	transition: background-color 150ms, border-color 150ms;
 }
@@ -46,7 +46,7 @@ textarea {
 }
 
 select {
-	background: transparent
+	background: var(--color-background)
 		url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="rgba(125,125,125,0.5)" d="M0,0l6,8l6-8"/></svg>')
 		center right no-repeat;
 }
@@ -55,7 +55,7 @@ select[multiple] {
 	height: auto;
 }
 select:focus {
-	background: transparent
+	background: var(--color-background)
 		url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="rgba(125,125,125,0.5)" d="M12,8L6,0L0,8"/></svg>')
 		center right no-repeat;
 }

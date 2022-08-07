@@ -6,7 +6,8 @@
 	"scripts": {
 		"watch:sync": "browser-sync start --server --files 'index.html', '*.css'",
 		"watch:sass": "npx sass src/style.scss:dist/style.css src/light.scss:dist/style-light.css src/dark.scss:dist/style-dark.css --style=compressed --watch --load-path=./",
-		"start": "npm run watch:sass & npm run watch:sync"
+		"start": "npm run watch:sass & npm run watch:sync",
+		"windows-start": "concurrently npm:watch:*"
 	},
 	"repository": {
 		"type": "git",
@@ -27,6 +28,7 @@
 	"homepage": "https://github.com/thisanimus/baselayer#readme",
 	"devDependencies": {
 		"browser-sync": "latest",
+		"concurrently": "latest",
 		"sass": "latest"
 	}
 }
