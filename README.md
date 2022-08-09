@@ -1,4 +1,4 @@
-# Baselayer
+# baselayer.css
 Sensible defaults without classes.
 ![Baselayer.css](assets/baselayer.svg)
 
@@ -13,130 +13,100 @@ Sensible defaults without classes.
 - Tiny size
 
 
-## Why?
+## What is baselayer.css?
 
-I commonly make quick demo pages or websites with simple content. For these, I don't want to spend time styling them but don't like the ugliness of the default styles.
+baselayer.css is a basic stylesheet for native HTML elements.  It requires no classes, and it gives you nothing beyond normalized, styled native HTML elements.  There is no grid, there are no components, just the bare basics. 
 
-Water.css is a CSS framework that doesn't require any classes. You just include it in your `<head>` and forget about it, while it silently makes everything nicer.
 
-## Who?
+## Why does this exist?
 
-You might want to use Water.css if you're making a simple static page or demo website that you don't want to spend time styling.
+For most of my projects I don't want or need an entire CSS framework, but I found myself writing minor variations of the same resets and css custom props over and over.  Baselayer.css is my attempt to codify this into something focussed, consistent and reusable.
 
-Although it originally wasn't built for more complex websites, many developers have used Water.css as a base stylesheet and creatively applied custom styles to build out an entire app. Nothing is stopping you from doing the same!
 
-## How?
+## Is this for me?
 
-Just stick this in your `<head>`:
+Baselayer will make your HTML look nice without any extra effort, it will give you basic css custom-props for color and spacing, its seriously small, and it won't get in the way of the rest of the stuff you want to build.  If that sounds good to you, baselayer.css may be for you.
 
-### 🌙/☀ Automatic Theme:
+There are plenty of good reasons to choose another tool instead:
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">`
+- "I just want a CSS reset."  Use [Josh Comeau's reset](https://www.joshwcomeau.com/css/custom-css-reset/) or [Eric Meyer's reset](https://meyerweb.com/eric/tools/css/reset/).
+- "I like what you're doing here, but it's a little too minimal, and I really wish borders were `box-shadow` instead of `border`."  Use [water.css](https://watercss.kognise.dev/).
+- "I want a small CSS framework, but I need a grid and some components."  Use [Miligram](https://milligram.io/), [Mustard](https://kylelogue.github.io/mustard-ui/index.html), or [Bulma](https://bulma.io/).
+- "I know what I like, and what I like is blue buttons." Use [Bootsrap](https://getbootstrap.com/) or [Foundation](https://get.foundation/).
+- "CSS SUCKS!!! Have you tried Tailwi..." *sigh. Go [Tailwind](https://tailwindcss.com/) it up. 
 
-### 🌙 Dark Theme:
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css">`
+
+## How do I Use this?
+
+Throw this in your website's `<head>`:
+
+### ☾/☀ Automatic Theme:
+
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer.css">`
+
+### ☾ Dark Theme:
+
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer-dark.css">`
 
 ### ☀ Light Theme:
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css">`
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer-light.css">`
 
 <br>
 
-A **preview** of the different themes is available [on the **demo page**](https://watercss.kognise.dev/#installation)! ⚡
+## CSS Custom Props
 
-#### How the "Automatic Theme" works
+Colors and sizing are done via CSS custom props so you can make whatever adjuestments you need.
 
-The main `water.css` file automatically switches between light and dark mode depending on the system preferences of a user's device. This detection is made possible through a CSS media query called [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme). In browsers where the preference can't be detected, `water.css` will stick to the light theme.
+### UI Colors
+```
+--color-light-muted
+--color-light
+--color-light-intense
 
-If you want to avoid this behavior, use either `dark.css` or `light.css`.
+--color-dark-muted
+--color-dark
+--color-dark-intense
 
-#### Supporting Internet Explorer
+--color-ui-muted
+--color-ui
+--color-ui-intense
 
-All three distributions of Water.css support Internet Explorer 11, but the main `water.css` file **doesn't respect the user's color scheme** and will be locked to light mode due to lack of `prefers-color-scheme` support.
-
-Be aware that IE also doesn't support [runtime theming](#theming), and fixed fallback values will be used. If you want to override the Water.css theme in a way that's compatible with IE, we recommend that you [compile your own theme](#compiling-your-own-theme).
-
-#### Unminified builds
-
-All versions are also available as unminified stylesheets, which can be handy during development.  
-Simply remove the `.min` from the file name.
-
-## Theming
-
-Do you want to make some adjustments or build your own theme completely different from the official dark or light themes? Since Water.css is built with CSS variables this is super easy to do! Here's a list list of all the variables you can change to your liking:
-
-- `--background-body`
-- `--background`
-- `--background-alt`
-- `--selection`
-- `--text-main`
-- `--text-bright`
-- `--text-muted`
-- `--links`
-- `--focus`
-- `--border`
-- `--code`
-- `--animation-duration`
-- `--button-hover`
-- `--scrollbar-thumb`
-- `--scrollbar-thumb-hover`
-- `--form-placeholder`
-- `--form-text`
-- `--variable`
-- `--highlight`
-- `--select-arrow`
-
-### Runtime theming
-
-> ⚠ If you use a version with support for legacy browsers like Internet Explorer, skip to [Compiling your own theme](#compiling-your-own-theme)!
-
-Water.css uses Custom Properties (_"CSS variables"_) to define its base styles such as colors. These can be changed and overwritten right in the browser.
-
-Because of this, you can simply add your own stylesheet to the page and set your own CSS variables there. As long as your stylesheet comes after Water.css in the HTML, your values will override the default ones and your theme is applied!
-
-This short example will use Water.css, but color all links red:
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/water.css@2/out/water.min.css" />
-<style>
-  :root {
-    --links: red;
-  }
-</style>
+--color-link-default
+--color-link-hover
+--color-link-visited
 ```
 
-If you want to change a value for dark or light mode only, use a media query like this:
+### Theme Colors
+```
+--color-primary-muted
+--color-primary
+--color-primary-intense
 
-```html
-<style>
-  :root {
-    --links: blue; /* Always applied */
-  }
+--color-secondary-muted
+--color-secondary
+--color-secondary-intense
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --links: yellow; /* Only applied in dark mode (overrides blue) */
-    }
-  }
-</style>
+--color-accent-muted
+--color-accent
+--color-accent-intense
 ```
 
-### Compiling your own theme
+### Sizing
+```
+--border-radius
+--border-width
+--space-sm
+--space-md
+--space-lg
+--space-xl
+```
 
-If you are targeting browsers without support for CSS Custom Properties such as Internet Explorer, runtime theming is not an option. To apply your own theming, you'll need to make your changes in the source files themselves, then re-compile the CSS files. This works like the following:
-
-- Clone the repository to your machine
-- Run `yarn` to install dependencies
-- Make the theming changes you want in `src/variables-*.css`
-- Run `yarn build` to compile the CSS files
-- Use the compiled files in the `out/` directory on your site
-
-You also might want to check out the [Contributing Guide](https://github.com/kognise/water.css/tree/master/.github/CONTRIBUTING.md) as it contains further information about the build setup.
-
-## Contributing
-
-Water.css becomes better for everyone when people like you help make it better!
-
-Check out our [Contributing Guide](.github/CONTRIBUTING.md) to learn how to get started.  
-And thanks for taking the time to contribute! :)
+### Fonts
+```
+--font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+'Helvetica Neue', sans-serif;
+--font-monospace: 'SFMono-Regular', Andale Mono, Consolas, 'Liberation Mono', Menlo, monospace;
+--font-serif: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  ```

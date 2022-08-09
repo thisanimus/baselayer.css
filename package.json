@@ -1,11 +1,11 @@
 {
-	"name": "baselayer",
+	"name": "baselayer.css",
 	"version": "1.0.21",
-	"description": "A stylish CSS reset",
+	"description": "A solid, minimal CSS framework.",
 	"main": "index.html",
 	"scripts": {
 		"watch:sync": "browser-sync start --server --files 'index.html', '*.css'",
-		"watch:sass": "npx sass src/style.scss:dist/style.css src/light.scss:dist/style-light.css src/dark.scss:dist/style-dark.css --style=compressed --watch --load-path=./",
+		"watch:sass": "npx sass src/style.scss:dist/baselayer.css src/light.scss:dist/baselayer-light.css src/dark.scss:dist/baselayer-dark.css --style=compressed --watch --load-path=./",
 		"start": "npm run watch:sass & npm run watch:sync",
 		"windows-start": "concurrently npm:watch:*"
 	},
@@ -23,9 +23,9 @@
 	"author": "Andrew Hale",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/thisanimus/baselayer/issues"
+		"url": "https://github.com/thisanimus/baselayer.css/issues"
 	},
-	"homepage": "https://github.com/thisanimus/baselayer#readme",
+	"homepage": "https://github.com/thisanimus/baselayer.css#readme",
 	"devDependencies": {
 		"browser-sync": "latest",
 		"concurrently": "latest",
