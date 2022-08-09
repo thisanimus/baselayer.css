@@ -2,7 +2,7 @@
 
 ## What is baselayer.css?
 
-baselayer.css is a basic stylesheet for native HTML elements.  It requires no classes, and it gives you nothing beyond normalized, styled native HTML elements.  There is no grid, there are no components, just the bare basics. 
+Baselayer.css is a basic stylesheet for native HTML elements.  It requires no classes, and it gives you nothing beyond normalized, styled native HTML elements.  There is no grid, there are no components, just the bare basics. 
 
 - Sensible Defaults for native HTML elements (no classes necessary).
 - Visual Consistenncy (CSS custom props FTW)
@@ -16,9 +16,9 @@ baselayer.css is a basic stylesheet for native HTML elements.  It requires no cl
 For most of my projects I don't want or need an entire CSS framework, but I found myself writing minor variations of the same resets and CSS custom props over and over.  Baselayer.css is my attempt to codify this into something focussed, consistent and reusable.
 
 
-## Is this for me?
+## Is this for you?
 
-Baselayer will make your HTML look nice without any extra effort, it will give you basic CSS custom-props for color and spacing, its seriously small, and it won't get in the way of the rest of the stuff you want to build.  If that sounds good to you, baselayer.css may be for you.
+Baselayer.css will make your HTML look nice without any extra effort, it will give you basic CSS custom-props for color and spacing, its seriously small, and it won't get in the way of the rest of the stuff you want to build.  If that sounds good to you, baselayer.css may be for you.
 
 There are plenty of good reasons to choose another tool instead:
 
