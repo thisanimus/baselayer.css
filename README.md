@@ -28,11 +28,11 @@ Baselayer.css will make your HTML look nice without any extra effort, it will gi
 
 There are plenty of good reasons to choose another tool instead:
 
-- "I just want a CSS reset."  Use [Josh Comeau's reset](https://www.joshwcomeau.com/CSS/custom-CSS-reset/) or [Eric Meyer's reset](https://meyerweb.com/eric/tools/CSS/reset/).
-- "I like what you're doing here, but it's a little too minimal, and I really wish borders were `box-shadow` instead of `border`."  Use [water.css](https://waterCSS.kognise.dev/).
+- "I just want a CSS reset."  Use [Josh Comeau's reset](https://www.joshwcomeau.com/css/custom-css-reset/) or [Eric Meyer's reset](https://meyerweb.com/eric/tools/css/reset/).
+- "I like what you're doing here, but it's a little too minimal, and I really wish borders were `box-shadow` instead of `border`."  Use [water.css](https://watercss.kognise.dev/).
 - "I want a small CSS framework, but I need a grid and some components."  Use [Miligram](https://milligram.io/), [Mustard](https://kylelogue.github.io/mustard-ui/index.html), or [Bulma](https://bulma.io/).
 - "I know what I'm about son, and what I'm about is blue buttons." Use [Bootstrap](https://getbootstrap.com/) or [Foundation](https://get.foundation/).
-- "CSS SUCKS!!! Have you tried Tailwi..." *sigh. Go [Tailwind](https://tailwindCSS.com/) it up. 
+- "CSS SUCKS!!! Have you tried Tailwi..." *sigh. Go [Tailwind](https://tailwindcss.com/) it up. 
 
 
 
