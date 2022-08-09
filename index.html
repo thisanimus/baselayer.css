@@ -1,501 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<title>Baselayer.css</title>
+		<meta content="Forward-looking sensible defaults without classes" name="description"/>
+		<meta content="This Animus" name="author"/>
+		<link href="dist/baselayer.css" rel="stylesheet"/>
+		<link href="assets/page.css" rel="stylesheet"/>
+	</head>
+	<body class="layout">
+		<header class="page-header">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 520 80" style="enable-background:new 0 0 520 80;" xml:space="preserve">
+			   <style>
+			   .logo-gray path:not(.logo-primary){
+				   fill: currentColor;
+			   }
+			   .logo-white{
+				fill:var(--color-light);
+			   }
+			   .logo-primary{
+				fill:var(--color-primary);
+			   }
+				</style>
+		   <g class="logo-gray">
+				<rect class="logo-white" x="5" y="5" width="70" height="70" rx="10" />
+			   <path class="logo-primary" d="M71.9,0H8.1C3.6,0,0,3.6,0,8.1v63.8C0,76.4,3.6,80,8.1,80h63.8c4.5,0,8.1-3.6,8.1-8.1V8.1C80,3.6,76.4,0,71.9,0z
+					M33.2,13.5c0-0.7,0.6-1.3,1.3-1.4c1.8-0.2,3.7-0.2,5.5-0.2c1.9,0,3.7,0.1,5.5,0.2c0.7,0.1,1.3,0.7,1.3,1.4v4.3
+				   c0,0.8-0.7,1.5-1.5,1.4c-1.7-0.2-3.5-0.2-5.3-0.2c-1.8,0-3.5,0.1-5.3,0.2c-0.8,0.1-1.5-0.6-1.5-1.4V13.5z M18.6,58.9l-1.4,4.2
+				   c-0.2,0.7-1,1.1-1.7,0.8c-1.6-0.6-3.2-1.2-4.8-1.9c-0.6-0.3-0.9-0.9-0.7-1.6l1.3-4.3c0.2-0.8,1.1-1.1,1.8-0.8
+				   c1.5,0.7,3.1,1.3,4.7,1.9C18.5,57.5,18.8,58.2,18.6,58.9z M52.3,67.1c-4,0.7-8.1,1.1-12.3,1.1c-4.2,0-8.3-0.4-12.3-1.1
+				   c-0.7-0.1-1.2-0.8-1.1-1.5c0.1-1,0.3-2.5,0.6-4.3c0.1-0.8,0.8-1.3,1.6-1.2c3.7,0.6,7.5,1,11.3,1c3.8,0,7.6-0.3,11.3-1
+				   c0.8-0.1,1.5,0.4,1.6,1.2c0.2,1.8,0.4,3.3,0.6,4.3C53.6,66.3,53.1,67,52.3,67.1z M59.6,53.5L55,39.8c-0.4-1.3-2.3-1.1-2.5,0.2
+				   c-0.3,1.9-0.6,4.4-0.6,7.6c0,2.6,0.2,5.4,0.4,8c0.1,0.7-0.4,1.3-1.1,1.4c-3.7,0.7-7.4,1-11.3,1c-3.8,0-7.6-0.3-11.3-1
+				   c-0.7-0.1-1.1-0.7-1.1-1.4c0.2-2.6,0.4-5.4,0.4-8c0-3.3-0.2-5.8-0.6-7.6c-0.2-1.3-2.1-1.5-2.5-0.2l-4.6,13.7
+				   c-0.2,0.7-1,1.1-1.7,0.8c-1.7-0.6-3.4-1.3-5-2.1c-0.6-0.3-0.9-0.9-0.7-1.6l6.3-21.1c3.6-7.5,15.1-7.6,20.7-7.6
+				   c5.6,0,17.1,0.2,20.7,7.6L67,50.6c0.2,0.6-0.1,1.3-0.7,1.6c-1.6,0.8-3.3,1.5-5,2.1C60.6,54.6,59.8,54.2,59.6,53.5z M69.2,62
+				   c-1.6,0.7-3.1,1.3-4.7,1.9c-0.7,0.3-1.5-0.1-1.7-0.8l-1.4-4.2c-0.2-0.7,0.1-1.4,0.8-1.6c1.6-0.6,3.2-1.2,4.7-1.9
+				   c0.7-0.3,1.6,0,1.8,0.8l1.3,4.3C70.1,61,69.8,61.7,69.2,62z"/>
+			   <path d="M122.9,28.1c-1.9,0-3.7,0.2-5.4,0.6c-1.7,0.4-3.2,1-4.5,1.6l0.6-12.1c0-0.9-0.1-1.6-0.2-2.1c-0.1-0.5-0.6-0.8-1.4-1
+				   c-0.8-0.2-2.4-0.3-4.7-0.3c-3.7,0-5.9,0.1-6.6,0.4c-0.7,0.2-1,0.8-1,1.7c0,0.9,0.2,1.8,0.6,2.7c1,0,1.7,0.1,2.3,0.4s1,0.9,1.3,1.8
+				   c0.2,0.9,0.4,2.6,0.5,5.2c0.1,2.5,0.1,8.7,0.1,18.6c0,1.9,0,4.4-0.1,7.6c-0.1,3.2-0.1,5.2-0.1,6.1c0,1,0.2,1.6,0.7,1.9
+				   c0.5,0.3,1.7,0.5,3.6,0.5l1.4-1c0.8,0.3,1.9,0.7,3.3,1c1.4,0.3,3,0.4,4.8,0.4c5.1,0,9.1-1.6,12.1-4.8c3-3.2,4.5-8,4.5-14.3
+				   c0-5.4-1.1-9.2-3.2-11.4S126.5,28.1,122.9,28.1z M122.9,54.5c-1,1.2-2.4,1.8-4.2,1.8c-1,0-2-0.2-2.9-0.5c-0.9-0.3-1.6-0.7-2.2-1.3
+				   l0-11c0-3.2,0.2-5.4,0.6-6.5c0.4-1.1,1-1.9,1.8-2.5s1.8-0.8,2.9-0.8c1.8,0,3.1,0.9,4,2.7s1.3,4.8,1.4,9.1
+				   C124.3,50.3,123.8,53.2,122.9,54.5z"/>
+			   <path d="M167.8,55.5c-0.4-1.1-0.6-4-0.6-8.8V38c0-3.8-1.1-6.3-3.3-7.6c-2.2-1.3-5.2-2-9-2c-3.2,0-6.2,0.2-9.1,0.5
+				   c-2.8,0.3-4.5,0.7-4.9,1c-0.4,0.3-0.7,0.7-0.7,1.3c0,0.9,0.3,1.9,0.9,3.2c0.6,1.3,1.1,2.1,1.7,2.6s1.5,0.6,2.9,0.3
+				   c1.4-0.3,2.1-0.5,2.2-0.6c0.1-0.1,0.6-0.8,1.4-2.3c1.2-0.3,2.3-0.4,3.3-0.4c1.8,0,3.2,0.6,4.1,1.8c0.9,1.2,1.5,3.5,1.7,6.9h-3.5
+				   c-5.4,0-9.4,0.9-11.9,2.7c-2.5,1.8-3.8,4.5-3.8,8.2c0,2.6,0.7,4.7,2.2,6.1c1.5,1.5,3.8,2.2,6.9,2.2c1.8,0,3.8-0.3,5.9-1
+				   c2.1-0.6,3.9-1.4,5.6-2.2c1.1,1.5,1.8,2.3,2.3,2.5s1.2,0.3,2.1,0.3c2,0,3.5-0.3,4.7-0.8c1.2-0.5,1.7-1.3,1.7-2.2
+				   c0-0.6-0.2-1.2-0.5-1.8C169,57,168.2,56.6,167.8,55.5z M158.4,49.8c0,1.5-0.1,2.7-0.4,3.6c-0.3,0.9-0.9,1.6-1.8,2.1
+				   c-0.9,0.5-1.9,0.7-3.1,0.7c-1.5,0-2.6-0.4-3.4-1.1c-0.8-0.7-1.2-1.9-1.2-3.3c0-1.7,0.4-2.8,1.2-3.5s2.1-0.9,3.9-0.9
+				   c1.6,0,3.2,0.2,4.8,0.5V49.8z"/>
+			   <path d="M192.1,41.9c-3.1-1.1-5.1-2-5.9-2.7c-0.9-0.7-1.3-1.6-1.3-2.5c0-0.9,0.3-1.6,1-2.1c0.6-0.5,1.6-0.7,2.9-0.7
+				   c2.5,0,6.1,1,10.8,3.1c1.2-1.6,1.9-3.1,1.9-4.7c0-1.5-0.9-2.5-2.7-3.1s-4.3-0.9-7.6-0.9c-4.8,0-8.5,0.9-11.2,2.8
+				   c-2.7,1.8-4.1,4.3-4.1,7.4c0,2.2,0.7,4,2,5.4c1.4,1.4,3.6,2.7,6.8,3.9c3,1.1,5.1,2.1,6.4,2.8c1.3,0.7,2,1.7,2,3
+				   c0,1.1-0.4,1.8-1.1,2.3c-0.8,0.5-1.8,0.7-3.2,0.7c-3.3,0-7.2-0.9-11.5-2.8c-1.1,1.3-1.6,2.6-1.6,4c0,1.8,0.9,3,2.7,3.6
+				   c1.8,0.6,4.8,0.9,9,0.9c4.5,0,8.1-0.9,10.8-2.6c2.7-1.7,4-4.2,4-7.5c0-2.4-0.8-4.4-2.3-5.8C198.3,44.5,195.7,43.2,192.1,41.9z"/>
+			   <path d="M226,56.1c-3.1,0-5.2-0.8-6.4-2.4c-1.2-1.6-1.9-3.8-1.9-6.7h12.1c2.9,0,4.8-0.5,5.7-1.4c0.9-0.9,1.3-2.5,1.3-4.7
+				   c0-4.4-1-7.7-3.1-9.7c-2-2.1-5.3-3.1-9.8-3.1c-5.1,0-9.1,1.6-12.1,4.8s-4.5,7.7-4.5,13.4c0,5.5,1.3,9.4,4,11.8s7,3.6,12.9,3.6
+				   c3.4,0,6.4-0.3,9-1s3.8-1.9,3.8-3.6c0-1.3-0.6-2.5-1.7-3.6C232.1,55.3,229,56.1,226,56.1z M218.9,35.7c0.8-1.3,2.1-2,3.7-2
+				   c1.5,0,2.7,0.5,3.5,1.6c0.8,1.1,1.3,2.6,1.3,4.5c0,0.8-0.1,1.3-0.3,1.7s-1,0.6-2.2,0.7c-1.3,0.1-3.1,0.2-5.5,0.2h-1.7
+				   C217.6,39.3,218,37,218.9,35.7z"/>
+			   <path d="M255,56.8c-0.1-2.8-0.2-7.3-0.2-13.5v-25c0-0.9-0.1-1.6-0.2-2.1c-0.1-0.5-0.6-0.8-1.4-1c-0.8-0.2-2.4-0.3-4.7-0.3
+				   c-3.7,0-5.9,0.1-6.6,0.4c-0.7,0.2-1,0.8-1,1.7c0,0.9,0.2,1.8,0.6,2.7c1,0,1.7,0.1,2.3,0.4s1,0.9,1.3,1.8c0.2,0.9,0.4,2.6,0.5,5.2
+				   c0.1,2.5,0.1,8.7,0.1,18.6c0,4.7-0.1,8.5-0.2,11.2h-2.7c-0.7,0-1.2,0.1-1.5,0.4c-0.3,0.3-0.5,0.8-0.5,1.4c0,0.8,0.2,1.7,0.6,2.6
+				   h15.9c0.9,0,1.5-0.2,1.8-0.5c0.3-0.3,0.5-0.8,0.5-1.6c0-0.9-0.2-1.7-0.6-2.4H255z"/>
+			   <path d="M291.8,55.5c-0.4-1.1-0.6-4-0.6-8.8V38c0-3.8-1.1-6.3-3.3-7.6c-2.2-1.3-5.2-2-9-2c-3.2,0-6.2,0.2-9.1,0.5
+				   c-2.8,0.3-4.5,0.7-4.9,1c-0.4,0.3-0.7,0.7-0.7,1.3c0,0.9,0.3,1.9,0.9,3.2c0.6,1.3,1.1,2.1,1.7,2.6s1.5,0.6,2.9,0.3
+				   c1.4-0.3,2.1-0.5,2.2-0.6c0.1-0.1,0.6-0.8,1.4-2.3c1.2-0.3,2.3-0.4,3.3-0.4c1.8,0,3.2,0.6,4.1,1.8c0.9,1.2,1.5,3.5,1.7,6.9h-3.5
+				   c-5.4,0-9.4,0.9-11.9,2.7c-2.5,1.8-3.8,4.5-3.8,8.2c0,2.6,0.7,4.7,2.2,6.1c1.5,1.5,3.8,2.2,6.9,2.2c1.8,0,3.8-0.3,5.9-1
+				   c2.1-0.6,3.9-1.4,5.6-2.2c1.1,1.5,1.8,2.3,2.3,2.5s1.2,0.3,2.1,0.3c2,0,3.5-0.3,4.7-0.8c1.2-0.5,1.7-1.3,1.7-2.2
+				   c0-0.6-0.2-1.2-0.5-1.8C292.9,57,292.2,56.6,291.8,55.5z M282.3,49.8c0,1.5-0.1,2.7-0.4,3.6c-0.3,0.9-0.9,1.6-1.8,2.1
+				   c-0.9,0.5-1.9,0.7-3.1,0.7c-1.5,0-2.6-0.4-3.4-1.1c-0.8-0.7-1.2-1.9-1.2-3.3c0-1.7,0.4-2.8,1.2-3.5s2.1-0.9,3.9-0.9
+				   c1.6,0,3.2,0.2,4.8,0.5V49.8z"/>
+			   <path d="M321.4,29.1c-0.8,0-1.3,0.2-1.6,0.6s-0.5,1-0.5,1.8c0,0.8,0.2,1.6,0.6,2.4h1.8c-0.2,1.9-1.1,6.1-2.7,12.5s-2.5,9.7-2.8,9.7
+				   s-0.9-2.4-1.9-7.1c-1-4.8-1.8-8.9-2.4-12.4c-0.6-3.5-1.1-5.6-1.4-6.3c-0.3-0.7-0.8-1.2-1.6-1.4c-0.8-0.3-2.2-0.4-4.2-0.4
+				   c-3,0-5,0.1-5.9,0.3c-0.9,0.2-1.3,0.8-1.3,1.8c0,0.8,0.2,1.7,0.6,2.7c1,0,1.8,0.1,2.2,0.3c0.5,0.2,0.8,0.6,1.1,1.4
+				   c0.3,0.7,0.6,1.9,1,3.4s1.5,5.8,3.2,12.6c1.7,6.9,2.7,10.4,2.9,10.5c0.3,0.1,2.1,0.2,5.5,0.1c-1.7,5.4-3.6,8.1-5.7,8.2
+				   c-2.1,0.1-5.5-0.3-10.1-1.3c-0.9,1.2-1.4,2.4-1.4,3.8c0,1.2,0.5,2,1.4,2.5c0.9,0.5,2.8,0.7,5.6,0.7c2.8,0,5.3-0.3,7.5-0.8
+				   c2.3-0.5,4.2-1.8,5.9-3.7s4.1-8.2,7.1-18.7c3.1-10.6,5-16.7,5.6-18.5h0.6c0.9,0,1.6-0.2,1.9-0.5c0.4-0.3,0.6-1,0.6-2
+				   c0-0.8-0.2-1.6-0.6-2.3H321.4z"/>
+			   <path d="M354.7,56.1c-3.1,0-5.2-0.8-6.4-2.4c-1.2-1.6-1.9-3.8-1.9-6.7h12.1c2.9,0,4.8-0.5,5.7-1.4c0.9-0.9,1.3-2.5,1.3-4.7
+				   c0-4.4-1-7.7-3.1-9.7c-2-2.1-5.3-3.1-9.8-3.1c-5.1,0-9.1,1.6-12.1,4.8s-4.5,7.7-4.5,13.4c0,5.5,1.3,9.4,4,11.8s7,3.6,12.9,3.6
+				   c3.4,0,6.4-0.3,9-1s3.8-1.9,3.8-3.6c0-1.3-0.6-2.5-1.7-3.6C360.8,55.3,357.7,56.1,354.7,56.1z M347.6,35.7c0.8-1.3,2.1-2,3.7-2
+				   c1.5,0,2.7,0.5,3.5,1.6c0.8,1.1,1.3,2.6,1.3,4.5c0,0.8-0.1,1.3-0.3,1.7s-1,0.6-2.2,0.7c-1.3,0.1-3.1,0.2-5.5,0.2h-1.7
+				   C346.3,39.3,346.8,37,347.6,35.7z"/>
+			   <path d="M395.3,28.2c-1.7,0-3.6,0.3-5.9,0.8s-4.7,1.6-7.4,3.3c0.1-1.6,0.1-2.9,0-3.8c-6.6,0.2-10.2,0.4-10.8,0.7
+				   c-0.6,0.2-0.9,0.7-0.9,1.5c0,0.9,0.2,1.7,0.6,2.6c1.4,0,2.4,0.6,3,1.7c0.6,1.1,0.9,4.7,0.9,10.8c0,4.2-0.1,7.9-0.2,11.1h-2.4
+				   c-0.7,0-1.2,0.1-1.5,0.4c-0.3,0.3-0.5,0.8-0.5,1.4c0,0.8,0.2,1.7,0.6,2.6h16.6c0.9,0,1.5-0.2,1.8-0.5c0.3-0.3,0.5-0.8,0.5-1.6
+				   c0-0.9-0.2-1.7-0.6-2.4h-5.1c-0.1-3.2-0.2-7-0.2-11.4c0-4.8,0.4-7.8,1.3-9c0.9-1.2,2.1-1.7,3.7-1.7c1,1.4,1.7,2.1,1.8,2.2
+				   c0.2,0.1,0.9,0,2-0.1c1.2-0.2,2-0.4,2.5-0.8c0.5-0.4,1-1.2,1.3-2.5c0.4-1.3,0.5-2.5,0.5-3.7c0-0.7-0.1-1.1-0.4-1.3
+				   C396.6,28.2,396.1,28.2,395.3,28.2z"/>
+			   <path d="M411.5,52.7c-1.9,0-3.4,0.4-4.5,1.2c-1.1,0.8-1.6,1.9-1.6,3.4s0.5,2.6,1.5,3.4c1,0.8,2.5,1.2,4.6,1.2
+				   c1.9,0,3.4-0.4,4.5-1.2c1.1-0.8,1.6-1.9,1.6-3.4s-0.5-2.6-1.5-3.4C415.2,53.1,413.6,52.7,411.5,52.7z"/>
+			   <path d="M446.6,56.3c-2.8,0-4.7-1-5.7-2.9c-1.1-1.9-1.6-4.9-1.6-8.8c0-4,0.5-6.8,1.6-8.4c1.1-1.6,2.7-2.4,5-2.4
+				   c2.3,0,5.2,0.9,8.8,2.7c1.1-1.4,1.6-2.9,1.6-4.6c0-1.3-0.7-2.3-1.9-2.8c-1.2-0.6-3.5-0.8-6.8-0.8c-6.2,0-10.8,1.6-14,4.9
+				   c-3.1,3.3-4.7,8-4.7,14.1c0,5.4,1.2,9.2,3.6,11.4s6.6,3.3,12.6,3.3c3.1,0,5.8-0.3,8.1-1c2.3-0.7,3.5-1.7,3.5-3.1
+				   c0-1.4-0.5-2.7-1.4-4C451.7,55.4,448.8,56.3,446.6,56.3z"/>
+			   <path d="M477.8,41.9c-3.1-1.1-5.1-2-5.9-2.7s-1.3-1.6-1.3-2.5c0-0.9,0.3-1.6,1-2.1c0.6-0.5,1.6-0.7,2.9-0.7c2.5,0,6.1,1,10.8,3.1
+				   c1.2-1.6,1.9-3.1,1.9-4.7c0-1.5-0.9-2.5-2.7-3.1s-4.3-0.9-7.6-0.9c-4.8,0-8.5,0.9-11.2,2.8c-2.7,1.8-4.1,4.3-4.1,7.4
+				   c0,2.2,0.7,4,2,5.4c1.4,1.4,3.6,2.7,6.8,3.9c3,1.1,5.1,2.1,6.4,2.8c1.3,0.7,2,1.7,2,3c0,1.1-0.4,1.8-1.1,2.3
+				   c-0.8,0.5-1.8,0.7-3.2,0.7c-3.3,0-7.2-0.9-11.5-2.8c-1.1,1.3-1.6,2.6-1.6,4c0,1.8,0.9,3,2.7,3.6c1.8,0.6,4.8,0.9,9,0.9
+				   c4.5,0,8.1-0.9,10.8-2.6c2.7-1.7,4-4.2,4-7.5c0-2.4-0.8-4.4-2.3-5.8C484,44.5,481.5,43.2,477.8,41.9z"/>
+			   <path d="M517.7,46c-1.5-1.5-4.1-2.8-7.7-4.1c-3.1-1.1-5.1-2-5.9-2.7c-0.9-0.7-1.3-1.6-1.3-2.5c0-0.9,0.3-1.6,1-2.1
+				   c0.6-0.5,1.6-0.7,2.9-0.7c2.5,0,6.1,1,10.8,3.1c1.2-1.6,1.9-3.1,1.9-4.7c0-1.5-0.9-2.5-2.7-3.1s-4.3-0.9-7.6-0.9
+				   c-4.8,0-8.5,0.9-11.2,2.8c-2.7,1.8-4.1,4.3-4.1,7.4c0,2.2,0.7,4,2,5.4c1.4,1.4,3.6,2.7,6.8,3.9c3,1.1,5.1,2.1,6.4,2.8
+				   c1.3,0.7,2,1.7,2,3c0,1.1-0.4,1.8-1.1,2.3c-0.8,0.5-1.8,0.7-3.2,0.7c-3.3,0-7.2-0.9-11.5-2.8c-1.1,1.3-1.6,2.6-1.6,4
+				   c0,1.8,0.9,3,2.7,3.6c1.8,0.6,4.8,0.9,9,0.9c4.5,0,8.1-0.9,10.8-2.6c2.7-1.7,4-4.2,4-7.5C520,49.4,519.2,47.5,517.7,46z"/>
+		   </g>
+		   </svg>
+		</header>
+		<nav class="menu">
+			<ul class="page-nav">
+				<li><a href="#typography">Typography</a></li>
+				<li><a href="#tables">Tables</a></li>
+				<li><a href="#code">Code</a></li>
+				<li><a href="#media">Media</a></li>
+				<li><a href="#forms-inputs">Forms and Inputs</a></li>
+				<li><a href="#buttons">Buttons</a></li>
+			</ul>
+		</nav>
+			<main>
+				
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>A Basic HTML5 Template</title>
-  <meta content="A simple HTML5 Template for new projects." name="description" />
-  <meta content="This Animus" name="author" />
-  <link href="dist/baselayer.css" rel="stylesheet" />
-</head>
-
-<body>
-  <header role="banner">
-    <h1>HTML5 Test Page</h1>
-    <p>
-      This is a test page filled with common HTML elements to be used to provide visual feedback
-      whilst building CSS systems and frameworks.
-    </p>
-  </header>
-
-  <section class="page-section">
-    <div class="container">
-      <nav role="navigation" class="alignwide">
-        <ul>
-          <li>
-            <a href="#text">Text</a>
-            <ul>
-              <li><a href="#text-headings">Headings</a></li>
-              <li><a href="#text-paragraphs">Paragraphs</a></li>
-              <li><a href="#text-blockquotes">Blockquotes</a></li>
-              <li><a href="#text-lists">Lists</a></li>
-              <li><a href="#text-hr">Horizontal rules</a></li>
-              <li><a href="#text-tables">Tabular data</a></li>
-              <li><a href="#text-code">Code</a></li>
-              <li><a href="#text-inline">Inline elements</a></li>
-              <li><a href="#text-comments">HTML Comments</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#embedded">Embedded content</a>
-            <ul>
-              <li><a href="#embedded-images">Images</a></li>
-              <li><a href="#embedded-audio">Audio</a></li>
-              <li><a href="#embedded-video">Video</a></li>
-              <li><a href="#embedded-canvas">Canvas</a></li>
-              <li><a href="#embedded-meter">Meter</a></li>
-              <li><a href="#embedded-progress">Progress</a></li>
-              <li><a href="#embedded-svg">Inline SVG</a></li>
-              <li><a href="#embedded-iframe">IFrames</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#forms">Form elements</a>
-            <ul>
-              <li><a href="#forms-input">Input fields</a></li>
-              <li><a href="#forms-select">Select menus</a></li>
-              <li><a href="#forms-checkbox">Checkboxes</a></li>
-              <li><a href="#forms-radio">Radio buttons</a></li>
-              <li><a href="#forms-textareas">Textareas</a></li>
-              <li><a href="#forms-html5">HTML5 inputs</a></li>
-              <li><a href="#forms-action">Action buttons</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-
-  <section id="text" class="page-section">
-    <div class="container">
-      <h2 id="text-headings">Headings</h2>
-      <div>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-      </div>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="text-paragraphs">Paragraphs</h2>
-      <p>
-        A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a
-        self-contained unit of a discourse in writing dealing with a particular point or idea. A
-        paragraph consists of one or more sentences. Though not required by the syntax of any
-        language, paragraphs are usually an expected part of formal writing, used to organize longer
-        prose.
-      </p>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="text-blockquotes">Blockquotes</h2>
-      <blockquote>
-        <p>
-          A block quotation (also known as a long quotation or extract) is a quotation in a written
-          document, that is set off from the main text as a paragraph, or block of text.
-        </p>
-        <p>
-          It is typically distinguished visually using indentation and a different typeface or smaller
-          size quotation. It may or may not include a citation, usually placed at the bottom.
-        </p>
-        <cite>
-          <a href="#!">Said no one, ever.</a>
-        </cite>
-      </blockquote>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="text-lists">Lists</h2>
-      <h3>Definition list</h3>
-      <dl>
-        <dt>Definition List Title</dt>
-        <dd>This is a definition list division.</dd>
-      </dl>
-      <h3>Ordered List</h3>
-      <ol>
-        <li>List Item 1</li>
-        <li>List Item 2</li>
-        <li>List Item 3</li>
-      </ol>
-      <h3>Unordered List</h3>
-      <ul>
-        <li>List Item 1</li>
-        <li>List Item 2</li>
-        <li>List Item 3</li>
-      </ul>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="text-hr">Horizontal rules</h2>
-      <hr />
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <table>
-        <caption>
-          Table Caption
-        </caption>
-        <thead>
-          <tr>
-            <th>Table Heading 1</th>
-            <th>Table Heading 2</th>
-            <th>Table Heading 3</th>
-            <th>Table Heading 4</th>
-            <th>Table Heading 5</th>
-          </tr>
-        </thead>
-        <tfoot>
-          <tr>
-            <th>Table Footer 1</th>
-            <th>Table Footer 2</th>
-            <th>Table Footer 3</th>
-            <th>Table Footer 4</th>
-            <th>Table Footer 5</th>
-          </tr>
-        </tfoot>
-        <tbody>
-          <tr>
-            <td>Table Cell 1</td>
-            <td>Table Cell 2</td>
-            <td>Table Cell 3</td>
-            <td>Table Cell 4</td>
-            <td>Table Cell 5</td>
-          </tr>
-          <tr>
-            <td>Table Cell 1</td>
-            <td>Table Cell 2</td>
-            <td>Table Cell 3</td>
-            <td>Table Cell 4</td>
-            <td>Table Cell 5</td>
-          </tr>
-          <tr>
-            <td>Table Cell 1</td>
-            <td>Table Cell 2</td>
-            <td>Table Cell 3</td>
-            <td>Table Cell 4</td>
-            <td>Table Cell 5</td>
-          </tr>
-          <tr>
-            <td>Table Cell 1</td>
-            <td>Table Cell 2</td>
-            <td>Table Cell 3</td>
-            <td>Table Cell 4</td>
-            <td>Table Cell 5</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="text-code">Code</h2>
-      <p>
-        <strong>Keyboard input:</strong>
-        <kbd>Cmd</kbd>
-      </p>
-      <p>
-        <strong>Inline code:</strong>
-        <code>&lt;div&gt;code&lt;/div&gt;</code>
-      </p>
-      <pre class="language-ruby"><code class="language-ruby"><span class="token keyword">require</span> <span class="token string-literal"><span class="token string">'redcarpet'</span></span><br>markdown <span class="token operator">=</span> <span class="token class-name">Redcarpet</span><span class="token punctuation">.</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Hello World!"</span></span><span class="token punctuation">)</span><br>puts markdown<span class="token punctuation">.</span>to_html</code></pre>
-      <p>
-        <strong>Block Code:</strong>
-      <pre><code>&lt;div&gt;code&lt;/div&gt;</code></pre>
-      </p>
-      <p>
-        <strong>Sample output:</strong>
-        <samp>This is sample output from a computer program.</samp>
-      </p>
-      <h2>Pre-formatted text</h2>
-      <pre>
-P R E F O R M A T T E D T E X T
-  ! " # $ % &amp; ' ( ) * + , - . /
-  0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
-  @ A B C D E F G H I J K L M N O
-  P Q R S T U V W X Y Z [ \ ] ^ _
-  ` a b c d e f g h i j k l m n o
-  p q r s t u v w x y z { | } ~ </pre>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="text-inline">Inline Elements</h2>
-      <p><a href="#!">This is a text link</a>.</p>
-      <p><strong>Strong is used to indicate strong importance.</strong></p>
-      <p><em>This text has added emphasis.</em></p>
-      <p>
-        The <b>b element</b> is stylistically different text from normal text, without any special
-        importance.
-      </p>
-      <p>The <i>i element</i> is text that is offset from the normal text.</p>
-      <p>
-        The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual
-        annotation.
-      </p>
-      <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
-      <p><s>This text has a strikethrough</s>.</p>
-      <p>Superscript<sup>®</sup>.</p>
-      <p>Subscript for things like H<sub>2</sub>O.</p>
-      <p><small>This small text is small for for fine print, etc.</small></p>
-      <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
-      <p>
-        <q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q>
-      </p>
-      <p><cite>This is a citation.</cite></p>
-      <p>The <dfn>dfn element</dfn> indicates a definition.</p>
-      <p>The <mark>mark element</mark> indicates a highlight.</p>
-      <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
-      <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="text-comments">HTML Comments</h2>
-      <p>
-        There is comment here:
-        <!--This comment should not be displayed-->
-      </p>
-      <p>There is a comment spanning multiple tags and lines below here.</p>
-      <!--<p><a href="#!">This is a text link. But it should not be displayed in a comment</a>.</p>
-              <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
-              <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
-
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section id="embedded" class="page-section">
-    <div class="container">
-      <h2 id="embedded-images">Images</h2>
-      <h3>No <code>&lt;figure&gt;</code> element</h3>
-      <p><img alt="Image alt text" src="http://placekitten.com/480/480" /></p>
-      <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
-      <figure>
-        <img alt="Image alt text" src="http://placekitten.com/420/420" />
-      </figure>
-      <h3>
-        Wrapped in a <code>&lt;figure&gt;</code> element, with a
-        <code>&lt;figcaption&gt;</code>
-      </h3>
-      <figure>
-        <img alt="Image alt text" src="http://placekitten.com/420/420" />
-        <figcaption>Here is a caption for this image.</figcaption>
-      </figure>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="embedded-audio">Audio</h2>
-      <audio controls="">audio</audio>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="embedded-video">Video</h2>
-      <video controls="">video</video>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="embedded-canvas">Canvas</h2>
-      <canvas> canvas </canvas>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="embedded-meter">Meter</h2>
-      <meter max="10" min="0" value="2">2 out of 10</meter>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="embedded-progress">Progress</h2>
-      <progress>progress</progress>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="embedded-svg">SVG</h2>
-      <svg height="100px" width="100px">
-        <circle cx="100" cy="100" fill="#1fa3ec" r="100"></circle>
-      </svg>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="embedded-iframe">IFrame</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="embedded-iframe-responsive">IFrame Responsive</h2>
-      <div class="responsive-embed">
-        <iframe class="embed-16-9" src="https://player.vimeo.com/video/32910921?h=a736aa943b&color=ffffff"
-          title="Vimeo video player" width="640" height="360" frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <a href="#top">[Top]</a>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <h2 id="forms">Form elements</h2>
-      <form>
-        <fieldset id="forms-input">
-          <legend>Input fields</legend>
-          
-          <label for="input-password">Password</label>
-          <input id="input-password" placeholder="Type your Password" type="password" />
-          <label for="input-webaddress">Web Address</label>
-          <input id="input-webaddress" placeholder="http://yoursite.com" type="url" />
-          <div class="form-row">
-            <label>First Name
-              <input id="first_name" placeholder="Joe" type="text" />
-            </label>
-            <label>Blow
-              <input id="first_name" placeholder="Blow" type="text" />
-            </label>
-          </div>
-          <label for="input-emailaddress">Email Address</label>
-          <input id="input-emailaddress" placeholder="name@email.com" type="email" />
-          <label for="input-phone">Phone Number</label>
-          <input id="input-phone" placeholder="(999) 999-9999" type="tel" />
-          <label for="input-file">File</label>
-          <input id="input-file" type="file" />
-          <label for="input-search">Search</label>
-          <input id="input-search" placeholder="Enter Search Term" type="search" />
-          <label for="input-text2">Number Input</label>
-          <input id="input-text2" placeholder="Enter a Number" type="number" />
-          <label class="error" for="input-text3">Error<input class="is-error" id="input-text3" placeholder="Text Input"
-              type="text" /></label>
-          <label class="valid" for="input-text4">Valid</label>
-          <input class="is-valid" id="input-text4" placeholder="Text Input" type="text" />
-        </fieldset>
-        <p><a href="#top">[Top]</a></p>
-        <fieldset id="forms-select">
-          <legend>Select menus</legend>
-          <p>
-            <label for="select">Select</label>
-            <select id="select">
-              <optgroup label="Option Group">
-                <option>Option One</option>
-                <option>Option Two</option>
-                <option>Option Three</option>
-              </optgroup>
-            </select>
-          </p>
-        </fieldset>
-        <p><a href="#top">[Top]</a></p>
-        <fieldset id="forms-checkbox">
-          <legend>Checkboxes</legend>
-          <ul class="list list--bare">
-            <li>
-              <input checked="checked" id="checkbox1" name="checkbox" type="checkbox" /> 
-              <label for="checkbox1">Choice A</label>
-            </li>
-            <li>
-              <input id="checkbox2" name="checkbox" type="checkbox" /> 
-              <label for="checkbox2">Choice B</label>
-            </li>
-            <li>
-              <input id="checkbox3" name="checkbox" type="checkbox" />
-              <label for="checkbox3">Choice C</label>
-            </li>
-          </ul>
-        </fieldset>
-        <p><a href="#top">[Top]</a></p>
-        <fieldset id="forms-radio">
-          <legend>Radio buttons</legend>
-          <div>
-            <input checked="checked" class="radio" id="radio1" name="radio" type="radio" />
-            <label for="radio1">Option 1</label>
-          </div>
-          <div>
-            <input checked="checked" class="radio" id="radio2" name="radio" type="radio" />
-            <label for="radio2">Option 2</label>
-          </div>
-          <div>
-            <input checked="checked" class="radio" id="radio3" name="radio" type="radio" />
-            <label for="radio3">Option 3</label>
-          </div>
-        </fieldset>
-        <p><a href="#top">[Top]</a></p>
-        <fieldset id="forms-textareas">
-          <legend>Textareas</legend>
-          <p>
-            <label for="textarea">Textarea</label>
-            <textarea cols="48" id="textarea" placeholder="Enter your message here" rows="8"></textarea>
-          </p>
-        </fieldset>
-        <p><a href="#top">[Top]</a></p>
-        <fieldset id="forms-html5">
-          <legend>HTML5 inputs</legend>
-          <p><label for="ic">Color input</label> <input id="ic" type="color" value="#000000" /></p>
-          <p>
-            <label for="in">Number input</label>
-            <input id="in" max="10" min="0" type="number" value="5" />
-          </p>
-          <p><label for="ir">Range input</label> <input id="ir" type="range" value="10" /></p>
-          <p><label for="idd">Date input</label> <input id="idd" type="date" value="1970-01-01" /></p>
-          <p><label for="idm">Month input</label> <input id="idm" type="month" value="1970-01" /></p>
-          <p><label for="idw">Week input</label> <input id="idw" type="week" value="1970-W01" /></p>
-          <p>
-            <label for="idt">Datetime input</label>
-            <input id="idt" type="datetime" value="1970-01-01T00:00:00Z" />
-          </p>
-          <p>
-            <label for="idtl">Datetime-local input</label>
-            <input id="idtl" type="datetime-local" value="1970-01-01T00:00" />
-          </p>
-        </fieldset>
-        <p><a href="#top">[Top]</a></p>
-        <fieldset id="forms-action">
-          <legend>Action buttons</legend>
-          <p>
-            <input type="submit" class="button-primary" value="&lt;input type=submit&gt;" />
-            <input type="button" class="button-secondary" data-button-color="secondary" value="&lt;input type=button&gt;" />
-            <input type="button" class="button-accent" value="&lt;input type=button&gt;" />
-            <input type="reset" value="&lt;input type=reset&gt;" />
-            <input disabled type="submit" value="&lt;input disabled&gt;" />
-          </p>
-          <p>
-            <button type="submit">&lt;button type=submit&gt;</button>
-            <button type="button">&lt;button type=button&gt;</button>
-            <button type="reset">&lt;button type=reset&gt;</button>
-            <button disabled type="button">&lt;button disabled&gt;</button>
-            <a class="button primary" href="#">Button Link</a>
-          </p>
-        </fieldset>
-        <p><a href="#top">[Top]</a></p>
-      </form>
-    </div>
-  </section>
-</body>
-
+			<p><strong>Baselayer.css</strong> is a basic stylesheet for native HTML elements.  It requires no classes, and it gives you nothing beyond normalized, styled native HTML elements.  There is no grid, there are no components, just the bare basics. </p>
+			<ul>
+				<li>Sensible defaults for native HTML elements (no classes necessary).</li>
+				<li>Visual consistency (CSS custom props FTW)</li>
+				<li>Themeable (see above)</li>
+				<li>Stardards-compliant browser support ("f" ie)</li>
+				<li>Tiny size (~700B gzipped)</li>
+			</ul>
+			<hr>
+			<div class="label" id="typography">
+				Typography
+			</div>
+      <br>
+			<h1>H1 Heading</h1>
+			<p>Incognito API spy vaporware chmod serverless resource. Build tool Twitter accessibility legacy Linux spy gate-keeping CS degree distributed systems. Little Bobby Tables Cloudfront var cross-post lang graph instance injection. Compile keycaps blockchain composition k virtual DOM DAG interface. Rm -rf * brownfield pull request variable architecture engineer JQuery Slack cloud legacy.</p>
+			<p>Shareware resolve compile JSON tech debt programmer spaghetti code blockchain CSS grid. Documentation driven bootcamp bootcamp animation backend scalable ecommerce platform. Ubuntu lazy load code-splitting Slack yarn JavaScript Byzantine fault tolerance driver one-size-fits-all approach. Continuous integration Ada Lovelace Ubuntu Safari homebrew functional programming big O LGTM fault tolerant.</p>
+			<h2>H2 Heading</h2>
+			<h3>Maybe you want to add an h3 Heading as a subtitle, and you just wish the spacing looked good.</h3>
+			<p>Cache Edge lang command-line engineer concurrent tabs vs spaces. Stateless Ubuntu child CSS-in-JS parent virtual DOM one-size-fits-all approach document object model remote. Cherry pick database design lazy eval OOP atomic design MIT license resolve k JQuery.</p>
+			<ul>
+				<li><strong>Rails:</strong> Rails is a full-stack framework. It ships with all the tools needed to build amazing web apps on both the front and back end.</li>
+				<li><strong>PHP:</strong> PHP is a popular general-purpose scripting language that is especially suited to web development.</li>
+				<li>
+					<strong>JavaScript:</strong> JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS
+					<ul>
+						<li>Node.js</li>
+						<li>React</li>
+						<li>Vue</li>
+					</ul>
+				</li>
+				<li><strong>Rust:</strong> Rust is a multi-paradigm, general-purpose programming language designed for performance and safety, especially safe concurrency.</li>
+			</ul>
+			<h3>H3 Heading</h3>
+			<p>Antipattern j package manager SRE machine learning merge sort. Internet button class Internet Explorer mobile app polemical thinking k data store greedy algorithm contribution +1. Key-value injection array code-splitting npm private object library raspberry pi Github.</p>
+			<ol>
+				<li>First</li>
+				<li>Second</li>
+				<li>Third</li>
+				<li>Fourth</li>
+				<li>Fifth</li>
+				<li>Sixth</li>
+				<li>Seventh</li>
+				<li>Eighth</li>
+				<li>Ninth</li>
+				<li>Tenth</li>
+				<li>Eleventh</li>
+			</ol>
+			<p>Linker maintainable pull request module remote commit Safari. Elixir GraphQL bike-shedding callback CS degree devops j coding abstraction websockets. Atomic design DOM blog spy module casting MVP. Scalable blockchain attributes Ruby views sudo behavior-driven engineer circle back contribution. MIT license maintainable build tool Angular Byzantine fault tolerance callback hell dependency injection asynchronous infrastructure.</p>
+			<blockquote>
+				<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
+				<p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p><cite><a href="#!">Said no one, ever.</a></cite>
+			</blockquote>
+			<h2>Inline Elements</h2>
+			<p><a href="#!">This is a text link</a>.</p>
+			<p><strong>Strong is used to indicate strong importance.</strong></p>
+			<p><em>This text has added emphasis.</em></p>
+			<p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+			<p>The <i>i element</i> is text that is offset from the normal text.</p>
+			<p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+			<p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+			<p><s>This text has a strikethrough</s>.</p>
+			<p>Superscript<sup>®</sup>.</p>
+			<p>Subscript for things like H<sub>2</sub>O.</p>
+			<p><small>This small text is small for for fine print, etc.</small></p>
+			<p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+			<p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
+			<p><cite>This is a citation.</cite></p>
+			<p>The <dfn>dfn element</dfn> indicates a definition.</p>
+			<p>The <mark>mark element</mark> indicates a highlight.</p>
+			<p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+			<p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+			<hr>
+			<div class="label" id="tables">
+				tables
+			</div><br>
+			<h2>Table</h2>
+			<table>
+				<caption>
+					Table Caption
+				</caption>
+				<thead>
+					<tr>
+						<th>Table Heading 1</th>
+						<th>Table Heading 2</th>
+						<th>Table Heading 3</th>
+						<th>Table Heading 4</th>
+						<th>Table Heading 5</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<th>Table Footer 1</th>
+						<th>Table Footer 2</th>
+						<th>Table Footer 3</th>
+						<th>Table Footer 4</th>
+						<th>Table Footer 5</th>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>Table Cell 1</td>
+						<td>Table Cell 2</td>
+						<td>Table Cell 3</td>
+						<td>Table Cell 4</td>
+						<td>Table Cell 5</td>
+					</tr>
+					<tr>
+						<td>Table Cell 1</td>
+						<td>Table Cell 2</td>
+						<td>Table Cell 3</td>
+						<td>Table Cell 4</td>
+						<td>Table Cell 5</td>
+					</tr>
+					<tr>
+						<td>Table Cell 1</td>
+						<td>Table Cell 2</td>
+						<td>Table Cell 3</td>
+						<td>Table Cell 4</td>
+						<td>Table Cell 5</td>
+					</tr>
+					<tr>
+						<td>Table Cell 1</td>
+						<td>Table Cell 2</td>
+						<td>Table Cell 3</td>
+						<td>Table Cell 4</td>
+						<td>Table Cell 5</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<div class="label" id="code">
+				Code
+			</div><br>
+			<h2>Pre + Code</h2>
+			<pre><code>require 'redcarpet'
+	markdown = Redcarpet.new("Hello World!")
+	puts markdown.to_html</code></pre><br>
+			<h2>Pre</h2>
+			<pre>P R E F O R M A T T E D T E X T
+	! " # $ % &amp; ' ( ) * + , - . /
+	0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+	@ A B C D E F G H I J K L M N O
+	P Q R S T U V W X Y Z [ \ ] ^ _
+	` a b c d e f g h i j k l m n o
+	p q r s t u v w x y z { | } ~ </pre>
+			<hr>
+			<div class="label" id="media">
+				Media
+			</div><br>
+			<h2>img</h2><img alt="The cutest catto you ever did see." src="https://placekitten.com/1600/900"><br>
+			<h2>figure</h2>
+			<figure>
+				<img alt="The cutest catto you ever did see." src="https://placekitten.com/800/450">
+				<figcaption>
+					The cutest catto you ever did see.
+				</figcaption>
+			</figure><br>
+			<h2>video</h2><video autoplay="" loop="" poster="https://deepspacerobots.com/assets/video/galaxy-poster.webp" preload="auto"><source src="https://deepspacerobots.com/assets/video/galaxy.mp4" type="video/mp4"></video><br>
+			<h2>iframe</h2><iframe allowfullscreen class="embed-16-9" frameborder="0" height="360" src="https://player.vimeo.com/video/32910921?h=a736aa943b&color=ffffff" title="Vimeo video player" width="640"></iframe>
+			<hr>
+			<div class="label" id="forms-inputs">
+				Forms and Inputs
+			</div><br>
+			<form action="#" method="post">
+				<h2>Checkbox</h2>
+				<div>
+					<input id="html" name="html" type="checkbox" value="HTML"> <label for="html">HTML</label>
+				</div>
+				<div>
+					<input id="css" name="css" type="checkbox" value="CSS"> <label for="css">CSS</label>
+				</div>
+				<div>
+					<input id="js" name="js" type="checkbox" value="JS"> <label for="js">JS</label>
+				</div><br>
+				<h2>Radio</h2>
+				<div>
+					<input id="radio-html" name="radio" type="radio" value="HTML"> <label for="radio-html">HTML</label>
+				</div>
+				<div>
+					<input id="radio-css" name="radio" type="radio" value="CSS"> <label for="radio-css">CSS</label>
+				</div>
+				<div>
+					<input id="radio-js" name="radio" type="radio" value="JS"> <label for="radio-js">JS</label>
+				</div><br>
+				<h2>Basic Form</h2>
+				<div class="form-row">
+					<label>First Name* <input id="firstName" name="firstName" placeholder="Jane" required="" type="text"></label> <label for="last_name">Last Name* <input id="lastName" name="lastName" placeholder="Smith" required="" type="text"></label>
+				</div>
+				<div class="form-row">
+					<label>Phone* <input id="phone" name="phone" placeholder="(123) 456-7890" required="" type="tel"></label> <label for="email">Email* <input id="email" name="email" placeholder="janesmith@domain.com" required="" type="email"></label>
+				</div>
+				<label for="snack">Favorite Snack</labesl>
+				<select id="snack" name="snack">
+					<option selected disabled>Choose your favorite snack</option>
+					<option value="chips">Chips</option>
+					<option value="apple">Apple</option>
+					<option value="pretzel">Pretzels</option>
+					<option value="carrot-sticks">Carrot Sticks</option>
+				</select>
+				<label for="message">Message*</label> 
+				<textarea id="message" name="message" placeholder="Write your message here." required=""></textarea> <button class="button" type="submit">Submit</button>
+				<fieldset>
+					<legend>More Form Inputs</legend> <label>Color <input id="color" name="color" type="color"></label>
+					<div class="form-row">
+						<label>Date <input id="date" name="date" type="date"></label> <label>Datetime Local <input id="datetime" name="datetime" type="datetime-local"></label>
+					</div><label>File <input id="file" name="file" type="file"></label> <label>Number <input id="number" name="numer" type="number" value="1"></label> <label>Password <input autocomplete="current-password" id="password" name="password" type="password"></label> <label for="volume">Range: <output for="volume" name="volume_output">0</output></label> <input id="volume" max="11" min="0" name="volume" oninput="volume_output.value = volume.value" type="range" value="0"> <label for="search">Search</label>
+					<div class="input-row">
+						<input id="search" name="search" placeholder="Type your search here" type="search">
+						<button type="button">Search</button>
+					</div>
+				</fieldset>
+			</form>
+			<hr>
+			<div class="label" id="buttons">
+				Buttons
+			</div><br>
+			<div class="button-group">
+				<button>Button</button> <a class="button">link</a> <input type="submit" value="input">
+			</div>
+			<div class="button-group">
+				<button class="button-secondary">Button</button> <a class="button button-secondary">link</a> <input class="button-secondary" type="submit" value="input">
+			</div>
+			<div class="button-group">
+				<button class="button-accent">Button</button> <a class="button button-accent">link</a> <input class="button-accent" type="submit" value="input">
+			</div>
+		</main>
+	
+	</body>
 </html>

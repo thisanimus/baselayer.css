@@ -3,14 +3,10 @@ img {
 	height: auto;
 	display: block;
 }
-.responsive-embed > * {
-	height: 100%;
-	width: 100%;
-}
 
 .embed-16-9 {
 	aspect-ratio: 16 / 9;
-	height: 100%;
+	height: auto;
 	width: 100%;
 }
 .embed-4-3 {
