@@ -1,10 +1,13 @@
 ![Baselayer.css](assets/baselayer.svg)
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer.css">
+```
 
 ## What is baselayer.css?
 
 Baselayer.css is a basic stylesheet for native HTML elements.  It requires no classes, and it gives you nothing beyond normalized, styled native HTML elements.  There is no grid, there are no components, just the bare basics. 
 
-- Sensible Defaults for native HTML elements (no classes necessary).
+- Sensible defaults for native HTML elements (no classes necessary).
 - Visual Consistency (CSS custom props FTW)
 - Themeable (see above)
 - Stardards-compliant browser support ("f" ie)

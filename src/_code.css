@@ -1,6 +1,7 @@
 code,
 pre {
 	font-family: var(--font-monospace);
+	font-size:.75rem;
 }
 code {
 	white-space: nowrap;
@@ -9,7 +10,7 @@ code {
 pre {
 	overflow-x: auto;
 	padding: var(--space-sm);
-	margin: var(--space-sm) 0;
+	margin: 0 0 var(--space-sm) 0;
 	background: var(--color-background-intense);
 }
 pre > code {

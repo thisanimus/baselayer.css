@@ -7,6 +7,8 @@ table {
 
 table caption {
 	text-align: left;
+	font-size:1rem;
+	font-weight:600;
 }
 
 td,
