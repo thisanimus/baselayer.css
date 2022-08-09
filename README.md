@@ -15,20 +15,20 @@ baselayer.css is a basic stylesheet for native HTML elements.  It requires no cl
 
 ## Why does this exist?
 
-For most of my projects I don't want or need an entire CSS framework, but I found myself writing minor variations of the same resets and css custom props over and over.  Baselayer.css is my attempt to codify this into something focussed, consistent and reusable.
+For most of my projects I don't want or need an entire CSS framework, but I found myself writing minor variations of the same resets and CSS custom props over and over.  Baselayer.css is my attempt to codify this into something focussed, consistent and reusable.
 
 
 ## Is this for me?
 
-Baselayer will make your HTML look nice without any extra effort, it will give you basic css custom-props for color and spacing, its seriously small, and it won't get in the way of the rest of the stuff you want to build.  If that sounds good to you, baselayer.css may be for you.
+Baselayer will make your HTML look nice without any extra effort, it will give you basic CSS custom-props for color and spacing, its seriously small, and it won't get in the way of the rest of the stuff you want to build.  If that sounds good to you, baselayer.css may be for you.
 
 There are plenty of good reasons to choose another tool instead:
 
-- "I just want a CSS reset."  Use [Josh Comeau's reset](https://www.joshwcomeau.com/css/custom-css-reset/) or [Eric Meyer's reset](https://meyerweb.com/eric/tools/css/reset/).
-- "I like what you're doing here, but it's a little too minimal, and I really wish borders were `box-shadow` instead of `border`."  Use [water.css](https://watercss.kognise.dev/).
+- "I just want a CSS reset."  Use [Josh Comeau's reset](https://www.joshwcomeau.com/CSS/custom-CSS-reset/) or [Eric Meyer's reset](https://meyerweb.com/eric/tools/CSS/reset/).
+- "I like what you're doing here, but it's a little too minimal, and I really wish borders were `box-shadow` instead of `border`."  Use [water.css](https://waterCSS.kognise.dev/).
 - "I want a small CSS framework, but I need a grid and some components."  Use [Miligram](https://milligram.io/), [Mustard](https://kylelogue.github.io/mustard-ui/index.html), or [Bulma](https://bulma.io/).
-- "I know what I like, and what I like is blue buttons." Use [Bootsrap](https://getbootstrap.com/) or [Foundation](https://get.foundation/).
-- "CSS SUCKS!!! Have you tried Tailwi..." *sigh. Go [Tailwind](https://tailwindcss.com/) it up. 
+- "I know what I'm about son, and what I'm about is blue buttons." Use [Bootstrap](https://getbootstrap.com/) or [Foundation](https://get.foundation/).
+- "CSS SUCKS!!! Have you tried Tailwi..." *sigh. Go [Tailwind](https://tailwindCSS.com/) it up. 
 
 
 
@@ -52,7 +52,7 @@ Throw this in your website's `<head>`:
 
 ## CSS Custom Props
 
-Colors and sizing are done via CSS custom props so you can make whatever adjuestments you need.
+Colors and sizing are done via CSS custom props so you can make whatever adjustments you need.
 
 ### UI Colors
 ```
