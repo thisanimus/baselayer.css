@@ -1,6 +1,6 @@
 # Baselayer
 Sensible defaults without classes.
-![Baselayer.css](assets/baselayer.png)
+![Baselayer.css](assets/baselayer.svg)
 
 <br>
 
