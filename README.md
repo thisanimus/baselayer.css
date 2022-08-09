@@ -30,7 +30,7 @@ There are plenty of good reasons to choose another tool instead:
 
 
 
-## How do I Use this?
+## Installation
 
 Throw this in your website's `<head>`:
 
