@@ -24,7 +24,7 @@ select {
 	width: 100%;
 	font: 400 0.9rem/1 var(--font-sans);
 	height: 2rem;
-	padding: .1rem 0.5rem;
+	padding: 0 0.5rem;
 	margin: 0.25em 0 0.75em 0;
 	transition: background-color 150ms, border-color 150ms;
 }
