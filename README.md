@@ -41,7 +41,7 @@ There are plenty of good reasons to choose another tool instead:
 
 Throw this in your website's `<head>`:
 
-### ☾/☀ Automatic Theme:
+### ☾/☼ Automatic Theme:
 
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer.css">`
 
@@ -49,7 +49,7 @@ Throw this in your website's `<head>`:
 
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer-dark.css">`
 
-### ☀ Light Theme:
+### ☼ Light Theme:
 
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer-light.css">`
 
