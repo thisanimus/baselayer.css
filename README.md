@@ -1,21 +1,16 @@
-# baselayer.css
-Sensible defaults without classes.
 ![Baselayer.css](assets/baselayer.svg)
 
 <br>
 
-## Goals
-
-- Sensible Defaults
-- Visual Consistenncy
-- Themeable
-- Stardards-compliant browser support
-- Tiny size
-
-
 ## What is baselayer.css?
 
 baselayer.css is a basic stylesheet for native HTML elements.  It requires no classes, and it gives you nothing beyond normalized, styled native HTML elements.  There is no grid, there are no components, just the bare basics. 
+
+- Sensible Defaults for native HTML elements (no classes necessary).
+- Visual Consistenncy (CSS custom props FTW)
+- Themeable (see above)
+- Stardards-compliant browser support ("f" ie)
+- Tiny size (~700B gzipped)
 
 
 ## Why does this exist?
