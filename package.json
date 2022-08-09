@@ -11,7 +11,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/thisanimus/baselayer.git"
+		"url": "git+https://github.com/thisanimus/baselayer.css.git"
 	},
 	"keywords": [
 		"css",
