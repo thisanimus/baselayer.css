@@ -1,7 +1,5 @@
 ![Baselayer.css](assets/baselayer.svg)
 
-<br>
-
 ## What is baselayer.css?
 
 baselayer.css is a basic stylesheet for native HTML elements.  It requires no classes, and it gives you nothing beyond normalized, styled native HTML elements.  There is no grid, there are no components, just the bare basics. 
