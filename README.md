@@ -2,6 +2,10 @@
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer.css">
 ```
+or
+```sh
+$ npm i baselayer.css
+```
 
 ## What is baselayer.css?
 
