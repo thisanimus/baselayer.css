@@ -146,7 +146,7 @@
 			<li>Visual consistency (CSS custom props FTW)</li>
 			<li>Themeable (see above)</li>
 			<li>Stardards-compliant browser support (press f for ie)</li>
-			<li>Tiny size (~700B gzipped)</li>
+			<li>Tiny size (~750B gzipped)</li>
 		</ul>
 		<hr>
 		<div class="label" id="typography">
@@ -374,16 +374,35 @@ p q r s t u v w x y z { | } ~ </pre>
 				<textarea id="message" name="message" placeholder="Write your message here." required=""></textarea>
 				<button class="button" type="submit">Submit</button>
 				<fieldset>
-					<legend>More Form Inputs</legend> <label>Color <input id="color" name="color" type="color"></label>
+					<legend>More Form Inputs</legend>
+
+					<label>Color
+						<input id="color" name="color" type="color" vlaue="#a63f44">
+					</label>
+
 					<div class="form-row">
-						<label>Date <input id="date" name="date" type="date"></label> <label>Datetime Local <input
-								id="datetime" name="datetime" type="datetime-local"></label>
-					</div><label>File <input id="file" name="file" type="file"></label> <label>Number <input id="number"
-							name="numer" type="number" value="1"></label> <label>Password <input
-							autocomplete="current-password" id="password" name="password" type="password"></label>
-					<label for="volume">Range: <output for="volume" name="volume_output">0</output></label> <input
-						id="volume" max="11" min="0" name="volume" oninput="volume_output.value = volume.value"
-						type="range" value="0"> <label for="search">Search</label>
+						<label>Date
+							<input id="date" name="date" type="date" />
+						</label>
+						<label>Datetime Local
+							<input id="datetime" name="datetime" type="datetime-local" />
+						</label>
+					</div>
+					<label>File
+						<input id="file" name="file" type="file">
+					</label>
+					<label>Number
+						<input id="number" name="numer" type="number" value="1">
+					</label>
+					<label>Password
+						<input autocomplete="current-password" id="password" name="password" type="password">
+					</label>
+					<label for="volume">Range:
+						<output for="volume" name="volume_output">0</output>
+					</label>
+					<input id="volume" max="11" min="0" name="volume" oninput="volume_output.value = volume.value"
+						type="range" value="0">
+					<label for="search">Search</label>
 					<div class="input-row">
 						<input id="search" name="search" placeholder="Type your search here" type="search">
 						<button type="button">Search</button>

@@ -1,11 +1,11 @@
 {
 	"name": "baselayer.css",
-	"version": "1.0.29",
+	"version": "1.0.30",
 	"description": "A solid, minimal CSS framework.",
 	"main": "index.html",
 	"scripts": {
 		"watch:sync": "browser-sync start --server --files 'index.html', '*.css'",
-		"watch:sass": "npx sass src/style.scss:dist/baselayer.css src/light.scss:dist/baselayer-light.css src/dark.scss:dist/baselayer-dark.css --style=compressed --watch --load-path=./",
+		"watch:sass": "npx sass src/style.scss:dist/baselayer.css src/light.scss:dist/baselayer-light.css src/dark.scss:dist/baselayer-dark.css --style=compressed --no-source-map --watch --load-path=./",
 		"start": "npm run watch:sass & npm run watch:sync",
 		"windows-start": "concurrently npm:watch:*"
 	},

@@ -15,7 +15,7 @@ Baselayer.css is a basic stylesheet for native HTML elements.  It requires no cl
 - Visual Consistency (CSS custom props FTW)
 - Themeable (see above)
 - Stardards-compliant browser support (press f for ie)
-- Tiny size (~700B gzipped)
+- Tiny size (~750B gzipped)
 
 ## What does it look like?
 [Here is a demo](https://thisanimus.github.io/baselayer.css/) that shows most of the elements you're likely to use in their typical context.
