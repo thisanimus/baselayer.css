@@ -1,4 +1,5 @@
 :root {
+	color-scheme: light dark;
 	--color-text-muted: var(--color-dark-muted);
 	--color-text: var(--color-dark);
 	--color-text-intense: var(--color-dark-intentse);
