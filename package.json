@@ -1,6 +1,6 @@
 {
 	"name": "baselayer.css",
-	"version": "1.0.32",
+	"version": "1.0.33",
 	"description": "A solid, minimal CSS framework.",
 	"main": "index.html",
 	"scripts": {

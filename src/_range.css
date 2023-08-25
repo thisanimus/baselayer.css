@@ -1,5 +1,5 @@
 :root {
-	--range-track: 4px;
+	--range-track: 2px;
 	--range-size: 20px;
 }
 [type='range'] {
@@ -21,7 +21,7 @@
 	width: 100%;
 	height: var(--range-track);
 	border-radius: var(--border-radius);
-	background: var(--color-ui-muted);
+	background: var(--color-ui);
 }
 [type='range']::-moz-range-track {
 	box-sizing: border-box;
@@ -29,7 +29,7 @@
 	width: 100%;
 	height: var(--range-track);
 	border-radius: var(--border-radius);
-	background: var(--color-ui-muted);
+	background: var(--color-ui);
 }
 [type='range']::-ms-track {
 	box-sizing: border-box;
@@ -37,7 +37,7 @@
 	width: 100%;
 	height: var(--range-track);
 	border-radius: var(--border-radius);
-	background: var(--color-ui-muted);
+	background: var(--color-ui);
 	color: transparent;
 }
 [type='range']::-moz-range-progress {
@@ -51,13 +51,13 @@
 	background: var(--color-ui);
 }
 [type='range']::-webkit-slider-thumb {
-	margin-top: -8px;
+	margin-top: calc((var(--range-size) / -2) + (var(--range-track) / 2));
 	box-sizing: border-box;
 	border: none;
 	width: var(--range-size);
 	height: var(--range-size);
 	border-radius: 50%;
-	border: var(--border-width) solid var(--color-ui);
+	border: var(--border-width) solid var(--color-ui-intense);
 	background: #fff;
 	pointer-events: all !important;
 	cursor: pointer;
@@ -68,7 +68,7 @@
 	width: var(--range-size);
 	height: var(--range-size);
 	border-radius: 50%;
-	border: var(--border-width) solid var(--color-ui);
+	border: var(--border-width) solid var(--color-ui-intense);
 	background: #fff;
 	pointer-events: all !important;
 	cursor: pointer;
@@ -80,7 +80,7 @@
 	width: var(--range-size);
 	height: var(--range-size);
 	border-radius: 50%;
-	border: var(--border-width) solid var(--color-ui);
+	border: var(--border-width) solid var(--color-ui-intense);
 	background: #fff;
 	pointer-events: all !important;
 	cursor: pointer;

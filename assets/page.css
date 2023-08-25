@@ -5,6 +5,7 @@
 	color: var(--color-text-muted);
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
+	font-size: 1rem;
 }
 .layout {
 	max-width: 100%;

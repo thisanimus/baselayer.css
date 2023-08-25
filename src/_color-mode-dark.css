@@ -1,11 +1,12 @@
 :root {
-	--color-text-muted: #657176;
+	color-scheme: dark;
+	--color-text-muted: #818d98;
 	--color-text: var(--color-light);
 	--color-text-intense: var(--color-light-intentse);
 
-	--color-ui-intense: hsla(206, 5%, 75%, 0.5);
-	--color-ui: hsla(206, 5%, 75%, 0.3);
-	--color-ui-muted: hsla(206, 5%, 75%, 0.1);
+	--color-ui-intense: #67747e;
+	--color-ui: #454d54;
+	--color-ui-muted: #2e3338;
 
 	--color-background-muted: var(--color-dark-muted);
 	--color-background: var(--color-dark);
@@ -15,4 +16,8 @@
 	--color-link-default: #64b5f6;
 	--color-link-hover: #bbdefb;
 	--color-link-visited: #ce93d8;
+
+	--color-shadow-intense: rgba(0, 0, 0, 0.3);
+	--color-shadow: rgba(0, 0, 0, 0.2);
+	--color-shadow-muted: rgba(0, 0, 0, 0.1);
 }
