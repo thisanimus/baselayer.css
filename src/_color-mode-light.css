@@ -1,12 +1,12 @@
 :root {
 	color-scheme: light;
-	--color-text-muted: var(--color-dark-muted);
+	--color-text-muted: #5c6a70;
 	--color-text: var(--color-dark);
 	--color-text-intense: var(--color-dark-intentse);
 
-	--color-ui-muted: #b7bbbe;
-	--color-ui: #808d93;
-	--color-ui-intense: #5c6a70;
+	--color-ui-intense: hsla(206, 5%, 25%, 0.5);
+	--color-ui: hsla(206, 5%, 25%, 0.3);
+	--color-ui-muted: hsla(206, 5%, 25%, 0.1);
 
 	--color-background-muted: var(--color-light-muted);
 	--color-background: var(--color-light);

@@ -1,12 +1,12 @@
 :root {
 	color-scheme: light dark;
-	--color-text-muted: var(--color-dark-muted);
+	--color-text-muted: #5c6a70;
 	--color-text: var(--color-dark);
 	--color-text-intense: var(--color-dark-intentse);
 
-	--color-ui-muted: #b7bbbe;
-	--color-ui: #808d93;
-	--color-ui-intense: #5c6a70;
+	--color-ui-intense: hsla(206, 5%, 25%, 0.5);
+	--color-ui: hsla(206, 5%, 25%, 0.3);
+	--color-ui-muted: hsla(206, 5%, 25%, 0.1);
 
 	--color-background-muted: var(--color-light-muted);
 	--color-background: var(--color-light);
@@ -16,17 +16,21 @@
 	--color-link-default: #1565c0;
 	--color-link-hover: #0d47a1;
 	--color-link-visited: #7b1fa2;
+
+	--color-shadow-intense: rgba(0, 0, 0, 0.2);
+	--color-shadow: rgba(0, 0, 0, 0.1);
+	--color-shadow-muted: rgba(0, 0, 0, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-text-muted: var(--color-light-muted);
+		--color-text-muted: #657176;
 		--color-text: var(--color-light);
 		--color-text-intense: var(--color-light-intentse);
 
-		--color-ui-intense: #b7bbbe;
-		--color-ui: #808d93;
-		--color-ui-muted: #5c6a70;
+		--color-ui-intense: hsla(206, 5%, 75%, 0.5);
+		--color-ui: hsla(206, 5%, 75%, 0.3);
+		--color-ui-muted: hsla(206, 5%, 75%, 0.1);
 
 		--color-background-muted: var(--color-dark-muted);
 		--color-background: var(--color-dark);
@@ -36,5 +40,9 @@
 		--color-link-default: #64b5f6;
 		--color-link-hover: #bbdefb;
 		--color-link-visited: #ce93d8;
+
+		--color-shadow-intense: rgba(0, 0, 0, 0.3);
+		--color-shadow: rgba(0, 0, 0, 0.2);
+		--color-shadow-muted: rgba(0, 0, 0, 0.1);
 	}
 }

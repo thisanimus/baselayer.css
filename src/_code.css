@@ -1,7 +1,7 @@
 code,
 pre {
 	font-family: var(--font-monospace);
-	font-size:.75rem;
+	font-size: 0.75rem;
 }
 code {
 	white-space: nowrap;

@@ -86,28 +86,30 @@ ol:not([class]) {
 	margin-bottom: 0.5rem;
 }
 
-ul:not([class]) ul, ol:not([class]) ul {
+ul:not([class]) ul,
+ol:not([class]) ul {
 	margin: 1rem 0 1rem 1rem;
 }
 
-ul:not([class]) ol, ol:not([class]) ol {
+ul:not([class]) ol,
+ol:not([class]) ol {
 	margin: 1rem 0 1rem 2rem;
 }
 
 hr {
 	border: none;
 	height: var(--border-width);
-	background: var(--color-background-muted);
+	background: var(--color-ui-muted);
 	width: 100%;
 	margin: var(--space-md) 0;
 }
 blockquote {
 	background: var(--color-background-intense);
-	border-left: var(--border-width) solid currentColor;
+	border-left: var(--border-width) solid var(--color-ui);
 	padding: var(--space-sm);
 	margin: 0 0 var(--space-md) 0;
 }
-blockquote:not(:first-child){
+blockquote:not(:first-child) {
 	margin: var(--space-md) 0;
 }
 blockquote > :first-child {

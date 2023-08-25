@@ -1,23 +1,23 @@
-[type="color"],
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="file"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="search"],
-[type="tel"],
-[type="text"],
-[type="url"],
-[type="week"],
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='file'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='url'],
+[type='week'],
 textarea,
 select {
 	color: currentColor;
 	-webkit-appearance: none;
 	background-color: transparent;
-	border: var(--border-width) solid var(--color-ui);
+	border: var(--border-width) solid var(--color-ui-intense);
 	border-radius: var(--border-radius);
 	box-shadow: none;
 	box-sizing: inherit;
@@ -28,18 +28,36 @@ select {
 	margin: 0.25em 0 0.75em 0;
 	transition: background-color 150ms, border-color 150ms;
 }
-:is([type="color"], [type="date"], [type="datetime"], [type="datetime-local"], [type="email"], [type="file"], [type="month"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"], [type="week"], input:not([type]), textarea, select):focus {
+:is(
+		[type='color'],
+		[type='date'],
+		[type='datetime'],
+		[type='datetime-local'],
+		[type='email'],
+		[type='file'],
+		[type='month'],
+		[type='number'],
+		[type='password'],
+		[type='search'],
+		[type='tel'],
+		[type='text'],
+		[type='url'],
+		[type='week'],
+		input:not([type]),
+		textarea,
+		select
+	):focus {
 	border-color: var(--color-link-default);
 	outline: 0;
 }
 ::placeholder {
-	color: var(--color-ui);
+	color: var(--color-text-muted);
 }
 textarea {
 	padding: 0.25rem 0.5rem;
 	line-height: 1.4;
 }
-[type="file"] {
+[type='file'] {
 	padding-top: 0.4rem;
 	padding-top: 0.4rem;
 	display: flex;
@@ -96,13 +114,13 @@ fieldset:focus-within {
 	border: var(--border-width) solid var(--color-ui);
 }
 
-[type="radio"],
-[type="checkbox"] {
+[type='radio'],
+[type='checkbox'] {
 	accent-color: var(--color-link-default);
 	display: inline-block;
 	cursor: pointer;
 }
-:where([type="radio"], [type="checkbox"]) + label {
+:where([type='radio'], [type='checkbox']) + label {
 	width: auto;
 	display: inline-block;
 	font-size: 0.9rem;
@@ -114,21 +132,21 @@ fieldset:focus-within {
 	cursor: pointer;
 }
 
-[type="color"] {
+[type='color'] {
 	-webkit-appearance: none;
 	display: block;
 	padding: 0;
 	cursor: pointer;
 	width: 2rem;
 }
-[type="color"]::-webkit-color-swatch-wrapper {
+[type='color']::-webkit-color-swatch-wrapper {
 	padding: 0;
 }
-[type="color"]::-webkit-color-swatch {
+[type='color']::-webkit-color-swatch {
 	border: none;
 }
 
-[type="file"] {
+[type='file'] {
 	border-style: dashed;
 	cursor: pointer;
 }
