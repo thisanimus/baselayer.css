@@ -31,6 +31,26 @@ header {
 .menu li:not(:last-child) {
 	margin-bottom: 0.5rem;
 }
+.platform-logos {
+	align-items: center;
+	gap: 0.5rem;
+	position: fixed;
+	bottom: 0.5rem;
+	right: 0.5em;
+	z-index: 1;
+}
+.platform-logos a {
+	display: block;
+	background: var(--color-light);
+	padding: var(--border-width);
+	border-radius: 50%;
+}
+.platform-logos a * {
+	pointer-events: none;
+}
+.platform-logos svg {
+	width: 1.5em;
+}
 
 @media only screen and (min-width: 40rem) {
 	.layout {
