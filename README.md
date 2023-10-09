@@ -12,7 +12,7 @@ $ npm i baselayer.css
 
 ## What is baselayer.css?
 
-Baselayer.css is a basic stylesheet for native HTML elements. It requires no classes, and it gives you nothing beyond normalized, styled native HTML elements. There is no grid, there are no components, just the bare basics.
+Baselayer.css is a low-specificity stylesheet for native HTML elements. It requires no classes, and it gives you nothing beyond normalized, styled native HTML elements. There is no grid, there are no components, just the bare basics.
 
 - Sensible defaults for native HTML elements (no classes necessary).
 - Visual Consistency (CSS custom props FTW)
