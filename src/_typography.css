@@ -4,6 +4,7 @@ h3,
 h4,
 h5,
 h6 {
+	overflow-wrap: break-word;
 	font-weight: 800;
 	line-height: 1.1;
 	margin: 0 0 1rem 0;
@@ -31,6 +32,7 @@ h6 {
 }
 
 p {
+	overflow-wrap: break-word;
 	margin: 0 0 0.75em 0;
 	max-width: 80ch;
 }
@@ -55,6 +57,10 @@ mark {
 	background: #fff176;
 }
 
+address {
+	font-style: normal;
+}
+
 .hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -64,6 +70,14 @@ mark {
 	white-space: nowrap;
 	width: 1px;
 }
+
+ul,
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 ul:not([class]) {
 	list-style-type: disc;
 	margin: 0 0 var(--space-sm) 1.125rem;

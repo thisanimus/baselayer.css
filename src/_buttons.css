@@ -11,7 +11,6 @@ button,
 	border-radius: var(--border-radius);
 	cursor: pointer;
 	display: inline-block;
-	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
 	font: 600 0.8rem/1 var(--font-sans);
@@ -30,13 +29,6 @@ a.button:where(:hover, :focus) {
 	filter: saturate(0);
 	pointer-events: none;
 	cursor: not-allowed;
-}
-
-.button-secondary {
-	--button-background: var(--color-secondary);
-}
-.button-secondary:where(:hover, :focus) {
-	--button-background: var(--color-secondary-intense);
 }
 
 .button-accent {

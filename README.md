@@ -89,10 +89,6 @@ Colors and sizing are done via CSS custom props so you can make whatever adjustm
 --color-primary
 --color-primary-intense
 
---color-secondary-muted
---color-secondary
---color-secondary-intense
-
 --color-accent-muted
 --color-accent
 --color-accent-intense

@@ -2,6 +2,7 @@ code,
 pre {
 	font-family: var(--font-monospace);
 	font-size: 0.75rem;
+	color: var(--color-link-default);
 }
 code {
 	white-space: nowrap;
