@@ -138,6 +138,7 @@
 			<li><a href="#tables">Tables</a></li>
 			<li><a href="#code">Code</a></li>
 			<li><a href="#media">Media</a></li>
+			<li><a href="#content-revealers">Content Revealers</a></li>
 			<li><a href="#forms-inputs">Forms and Inputs</a></li>
 			<li><a href="#buttons">Buttons</a></li>
 		</ul>
@@ -335,9 +336,38 @@ p q r s t u v w x y z { | } ~ </pre>
 			src="https://player.vimeo.com/video/32910921?h=a736aa943b&color=ffffff" title="Vimeo video player"
 			width="640"></iframe>
 		<hr>
+		<div class="label" id="content-revealers">
+			Content Revealers
+		</div>
+		<br>
+		<h2>Dialog</h2>
+		<dialog id="pop-up">
+			<p>Hey there! This is a dialog</p>
+			<form method="dialog">
+				<button>Close</button>
+			</form>
+		</dialog>
+		<p>
+		<button data-trigger-dialog="pop-up" onClick="openPopup(this)">Open dialog box</button>
+		<script>
+			function openPopup(target){
+				const dialog = document.getElementById(target.dataset.triggerDialog);
+				dialog.showModal()
+			}
+		</script>
+		</p>
+		
+		<h2>Details</h2>
+		<details>
+			<summary>Click for more Details</summary>
+			<p>Ruby views sudo behavior-driven engineer circle back contribution. MIT license maintainable build
+			tool Angular Byzantine fault tolerance callback hell.</p>
+		</details>
+		<hr>
 		<div class="label" id="forms-inputs">
 			Forms and Inputs
-		</div><br>
+		</div>
+		<br>
 		<form action="#" method="post">
 			<h2>Checkbox</h2>
 			<div>
