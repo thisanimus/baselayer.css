@@ -4,9 +4,9 @@
 	--color-text: var(--color-light);
 	--color-text-intense: var(--color-light-intentse);
 
-	--color-ui-intense: #67747e;
-	--color-ui: #454d54;
-	--color-ui-muted: #2e3338;
+	--color-ui-intense: #67717e;
+	--color-ui: #454b54;
+	--color-ui-muted: #383d47;
 
 	--color-background-muted: var(--color-dark-muted);
 	--color-background: var(--color-dark);

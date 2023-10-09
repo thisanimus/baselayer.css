@@ -41,9 +41,16 @@ header {
 }
 .platform-logos a {
 	display: block;
-	background: var(--color-light);
-	padding: var(--border-width);
+	background: var(--color-light-intense);
+	padding: 0.25rem;
 	border-radius: 50%;
+	box-shadow: 0 0.1rem 0.2rem var(--color-shadow);
+	transform: scale(0.95);
+	transition: transform 250ms, box-shadow 250ms;
+}
+.platform-logos a:hover {
+	transform: scale(1);
+	box-shadow: 0 0.2rem 0.4rem var(--color-shadow-intense);
 }
 .platform-logos a * {
 	pointer-events: none;
