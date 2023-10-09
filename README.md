@@ -40,21 +40,45 @@ There are plenty of good reasons to choose another tool instead:
 - "I know what I'm about son, and what I'm about is blue buttons." Use [Bootstrap](https://getbootstrap.com/) or [Foundation](https://get.foundation/).
 - "CSS SUCKS!!! Have you tried Tailwi..." \*sigh. Go [Tailwind](https://tailwindcss.com/) it up.
 
-## Installation
+## Installation - HTML
 
 Throw this in your website's `<head>`:
 
 ### ☾/☼ Automatic Theme:
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer.css">`
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer.css" />
+```
+
+or
+
+```js
+import '../node_modules/baselayer.css/dist/baselayer.css';
+```
 
 ### ☾ Dark Theme:
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer-dark.css">`
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer-dark.css" />
+```
+
+or
+
+```js
+import '../node_modules/baselayer.css/dist/baselayer-dark.css';
+```
 
 ### ☼ Light Theme:
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer-light.css">`
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer-light.css" />
+```
+
+or
+
+```js
+import '../node_modules/baselayer.css/dist/baselayer-light.css';
+```
 
 <br>
 
