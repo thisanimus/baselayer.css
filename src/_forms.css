@@ -119,6 +119,7 @@ fieldset:focus-within {
 	accent-color: var(--color-link-default);
 	display: inline-block;
 	cursor: pointer;
+	vertical-align: -0.1em;
 }
 :where([type='radio'], [type='checkbox']) + label {
 	width: auto;
