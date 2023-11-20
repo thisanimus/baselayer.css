@@ -50,9 +50,6 @@ select {
 	border-color: var(--color-link-default);
 	outline: 0;
 }
-::placeholder {
-	color: var(--color-text-muted);
-}
 textarea {
 	padding: 0.25rem 0.5rem;
 	line-height: 1.4;
