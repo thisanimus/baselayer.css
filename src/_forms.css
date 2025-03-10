@@ -1,19 +1,8 @@
-[type='color'],
-[type='date'],
-[type='datetime'],
-[type='datetime-local'],
-[type='email'],
-[type='file'],
-[type='month'],
-[type='number'],
-[type='password'],
-[type='search'],
-[type='tel'],
-[type='text'],
-[type='url'],
-[type='week'],
-textarea,
-select {
+:where(
+		select,
+		textarea,
+		input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='reset'], [type='submit'])
+	) {
 	color: currentColor;
 	-webkit-appearance: none;
 	background-color: transparent;
@@ -28,24 +17,10 @@ select {
 	margin: 0.25em 0 0.75em 0;
 	transition: background-color 150ms, border-color 150ms;
 }
-:is(
-		[type='color'],
-		[type='date'],
-		[type='datetime'],
-		[type='datetime-local'],
-		[type='email'],
-		[type='file'],
-		[type='month'],
-		[type='number'],
-		[type='password'],
-		[type='search'],
-		[type='tel'],
-		[type='text'],
-		[type='url'],
-		[type='week'],
-		input:not([type]),
+:where(
+		select,
 		textarea,
-		select
+		input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='reset'], [type='submit'])
 	):focus {
 	border-color: var(--color-link-default);
 	outline: 0;
@@ -55,8 +30,7 @@ textarea {
 	line-height: 1.4;
 }
 [type='file'] {
-	padding-top: 0.4rem;
-	padding-top: 0.4rem;
+	padding-top: 0.3rem;
 	display: flex;
 	align-items: center;
 }

@@ -4,10 +4,9 @@
 	"description": "A solid, minimal CSS framework.",
 	"main": "index.html",
 	"scripts": {
-		"watch:sync": "browser-sync start --server --files 'index.html', '*.css'",
+		"watch:sync": "npx @11ty/eleventy-dev-server",
 		"watch:sass": "npx sass src/style.scss:dist/baselayer.css src/light.scss:dist/baselayer-light.css src/dark.scss:dist/baselayer-dark.css --style=compressed --no-source-map --watch --load-path=./",
-		"start": "npm run watch:sass & npm run watch:sync",
-		"windows-start": "concurrently npm:watch:*"
+		"dev": "npm run watch:sass & npm run watch:sync"
 	},
 	"repository": {
 		"type": "git",
@@ -27,8 +26,7 @@
 	},
 	"homepage": "https://github.com/thisanimus/baselayer.css#readme",
 	"devDependencies": {
-		"browser-sync": "latest",
-		"concurrently": "latest",
+		"@11ty/eleventy-dev-server": "latest",
 		"sass": "latest"
 	}
 }

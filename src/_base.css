@@ -49,8 +49,3 @@ body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
-.container {
-	max-width: 40rem;
-	margin: 0 auto;
-	padding: var(--space-md);
-}

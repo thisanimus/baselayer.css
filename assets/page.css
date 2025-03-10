@@ -1,6 +1,11 @@
 :root {
 	scroll-padding-top: var(--space-md);
 }
+.container {
+	max-width: 40rem;
+	margin: 0 auto;
+	padding: var(--space-md);
+}
 .label {
 	color: var(--color-text-muted);
 	text-transform: uppercase;
