@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>Baselayer.css</title>
+		<meta content="Forward-looking sensible defaults without classes" name="description" />
+		<meta content="This Animus" name="author" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="og:title" content="Baselayer.css" />
+		<meta property="og:description" name="description" content="Forward-looking sensible defaults without classes." />
+		<meta property="og:image" content="https://thisanimus.github.io/baselayer.css/assets/og.png" />
 
-<head>
-	<meta charset="utf-8" />
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<title>Baselayer.css</title>
-	<meta content="Forward-looking sensible defaults without classes" name="description" />
-	<meta content="This Animus" name="author" />
-	<meta name="twitter:card" content="summary_large_image">
-	<meta property="og:title" content="Baselayer.css">
-	<meta property="og:description" name="description" content="Forward-looking sensible defaults without classes.">
-	<meta property="og:image" content="https://thisanimus.github.io/baselayer.css/assets/og.png">
+		<link href="dist/baselayer.css" rel="stylesheet" />
+		<link href="assets/page.css" rel="stylesheet" />
+	</head>
 
-	<link href="dist/baselayer.css" rel="stylesheet" />
-	<link href="assets/page.css" rel="stylesheet" />
-</head>
+	<body class="layout">
+		<header class="page-header">
+			<svg
+				version="1.1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				x="0px"
+				y="0px"
+				viewBox="0 0 520 80"
+				style="enable-background: new 0 0 520 80"
+				xml:space="preserve"
+			>
+				<style>
+					.logo-gray path:not(.logo-primary) {
+						fill: currentColor;
+					}
 
-<body class="layout">
-	<header class="page-header">
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			viewBox="0 0 520 80" style="enable-background:new 0 0 520 80;" xml:space="preserve">
-			<style>
-				.logo-gray path:not(.logo-primary) {
-					fill: currentColor;
-				}
+					.logo-white {
+						fill: var(--color-light);
+					}
 
-				.logo-white {
-					fill: var(--color-light);
-				}
-
-				.logo-primary {
-					fill: var(--color-primary);
-				}
-			</style>
-			<g class="logo-gray">
-				<rect class="logo-white" x="5" y="5" width="70" height="70" rx="10" />
-				<path class="logo-primary" d="M71.9,0H8.1C3.6,0,0,3.6,0,8.1v63.8C0,76.4,3.6,80,8.1,80h63.8c4.5,0,8.1-3.6,8.1-8.1V8.1C80,3.6,76.4,0,71.9,0z
+					.logo-primary {
+						fill: var(--color-primary);
+					}
+				</style>
+				<g class="logo-gray">
+					<rect class="logo-white" x="5" y="5" width="70" height="70" rx="10" />
+					<path
+						class="logo-primary"
+						d="M71.9,0H8.1C3.6,0,0,3.6,0,8.1v63.8C0,76.4,3.6,80,8.1,80h63.8c4.5,0,8.1-3.6,8.1-8.1V8.1C80,3.6,76.4,0,71.9,0z
 					M33.2,13.5c0-0.7,0.6-1.3,1.3-1.4c1.8-0.2,3.7-0.2,5.5-0.2c1.9,0,3.7,0.1,5.5,0.2c0.7,0.1,1.3,0.7,1.3,1.4v4.3
 				   c0,0.8-0.7,1.5-1.5,1.4c-1.7-0.2-3.5-0.2-5.3-0.2c-1.8,0-3.5,0.1-5.3,0.2c-0.8,0.1-1.5-0.6-1.5-1.4V13.5z M18.6,58.9l-1.4,4.2
 				   c-0.2,0.7-1,1.1-1.7,0.8c-1.6-0.6-3.2-1.2-4.8-1.9c-0.6-0.3-0.9-0.9-0.7-1.6l1.3-4.3c0.2-0.8,1.1-1.1,1.8-0.8
@@ -47,360 +56,422 @@
 				   c-0.2,0.7-1,1.1-1.7,0.8c-1.7-0.6-3.4-1.3-5-2.1c-0.6-0.3-0.9-0.9-0.7-1.6l6.3-21.1c3.6-7.5,15.1-7.6,20.7-7.6
 				   c5.6,0,17.1,0.2,20.7,7.6L67,50.6c0.2,0.6-0.1,1.3-0.7,1.6c-1.6,0.8-3.3,1.5-5,2.1C60.6,54.6,59.8,54.2,59.6,53.5z M69.2,62
 				   c-1.6,0.7-3.1,1.3-4.7,1.9c-0.7,0.3-1.5-0.1-1.7-0.8l-1.4-4.2c-0.2-0.7,0.1-1.4,0.8-1.6c1.6-0.6,3.2-1.2,4.7-1.9
-				   c0.7-0.3,1.6,0,1.8,0.8l1.3,4.3C70.1,61,69.8,61.7,69.2,62z" />
-				<path d="M122.9,28.1c-1.9,0-3.7,0.2-5.4,0.6c-1.7,0.4-3.2,1-4.5,1.6l0.6-12.1c0-0.9-0.1-1.6-0.2-2.1c-0.1-0.5-0.6-0.8-1.4-1
+				   c0.7-0.3,1.6,0,1.8,0.8l1.3,4.3C70.1,61,69.8,61.7,69.2,62z"
+					/>
+					<path
+						d="M122.9,28.1c-1.9,0-3.7,0.2-5.4,0.6c-1.7,0.4-3.2,1-4.5,1.6l0.6-12.1c0-0.9-0.1-1.6-0.2-2.1c-0.1-0.5-0.6-0.8-1.4-1
 				   c-0.8-0.2-2.4-0.3-4.7-0.3c-3.7,0-5.9,0.1-6.6,0.4c-0.7,0.2-1,0.8-1,1.7c0,0.9,0.2,1.8,0.6,2.7c1,0,1.7,0.1,2.3,0.4s1,0.9,1.3,1.8
 				   c0.2,0.9,0.4,2.6,0.5,5.2c0.1,2.5,0.1,8.7,0.1,18.6c0,1.9,0,4.4-0.1,7.6c-0.1,3.2-0.1,5.2-0.1,6.1c0,1,0.2,1.6,0.7,1.9
 				   c0.5,0.3,1.7,0.5,3.6,0.5l1.4-1c0.8,0.3,1.9,0.7,3.3,1c1.4,0.3,3,0.4,4.8,0.4c5.1,0,9.1-1.6,12.1-4.8c3-3.2,4.5-8,4.5-14.3
 				   c0-5.4-1.1-9.2-3.2-11.4S126.5,28.1,122.9,28.1z M122.9,54.5c-1,1.2-2.4,1.8-4.2,1.8c-1,0-2-0.2-2.9-0.5c-0.9-0.3-1.6-0.7-2.2-1.3
 				   l0-11c0-3.2,0.2-5.4,0.6-6.5c0.4-1.1,1-1.9,1.8-2.5s1.8-0.8,2.9-0.8c1.8,0,3.1,0.9,4,2.7s1.3,4.8,1.4,9.1
-				   C124.3,50.3,123.8,53.2,122.9,54.5z" />
-				<path d="M167.8,55.5c-0.4-1.1-0.6-4-0.6-8.8V38c0-3.8-1.1-6.3-3.3-7.6c-2.2-1.3-5.2-2-9-2c-3.2,0-6.2,0.2-9.1,0.5
+				   C124.3,50.3,123.8,53.2,122.9,54.5z"
+					/>
+					<path
+						d="M167.8,55.5c-0.4-1.1-0.6-4-0.6-8.8V38c0-3.8-1.1-6.3-3.3-7.6c-2.2-1.3-5.2-2-9-2c-3.2,0-6.2,0.2-9.1,0.5
 				   c-2.8,0.3-4.5,0.7-4.9,1c-0.4,0.3-0.7,0.7-0.7,1.3c0,0.9,0.3,1.9,0.9,3.2c0.6,1.3,1.1,2.1,1.7,2.6s1.5,0.6,2.9,0.3
 				   c1.4-0.3,2.1-0.5,2.2-0.6c0.1-0.1,0.6-0.8,1.4-2.3c1.2-0.3,2.3-0.4,3.3-0.4c1.8,0,3.2,0.6,4.1,1.8c0.9,1.2,1.5,3.5,1.7,6.9h-3.5
 				   c-5.4,0-9.4,0.9-11.9,2.7c-2.5,1.8-3.8,4.5-3.8,8.2c0,2.6,0.7,4.7,2.2,6.1c1.5,1.5,3.8,2.2,6.9,2.2c1.8,0,3.8-0.3,5.9-1
 				   c2.1-0.6,3.9-1.4,5.6-2.2c1.1,1.5,1.8,2.3,2.3,2.5s1.2,0.3,2.1,0.3c2,0,3.5-0.3,4.7-0.8c1.2-0.5,1.7-1.3,1.7-2.2
 				   c0-0.6-0.2-1.2-0.5-1.8C169,57,168.2,56.6,167.8,55.5z M158.4,49.8c0,1.5-0.1,2.7-0.4,3.6c-0.3,0.9-0.9,1.6-1.8,2.1
 				   c-0.9,0.5-1.9,0.7-3.1,0.7c-1.5,0-2.6-0.4-3.4-1.1c-0.8-0.7-1.2-1.9-1.2-3.3c0-1.7,0.4-2.8,1.2-3.5s2.1-0.9,3.9-0.9
-				   c1.6,0,3.2,0.2,4.8,0.5V49.8z" />
-				<path
-					d="M192.1,41.9c-3.1-1.1-5.1-2-5.9-2.7c-0.9-0.7-1.3-1.6-1.3-2.5c0-0.9,0.3-1.6,1-2.1c0.6-0.5,1.6-0.7,2.9-0.7
+				   c1.6,0,3.2,0.2,4.8,0.5V49.8z"
+					/>
+					<path
+						d="M192.1,41.9c-3.1-1.1-5.1-2-5.9-2.7c-0.9-0.7-1.3-1.6-1.3-2.5c0-0.9,0.3-1.6,1-2.1c0.6-0.5,1.6-0.7,2.9-0.7
 				   c2.5,0,6.1,1,10.8,3.1c1.2-1.6,1.9-3.1,1.9-4.7c0-1.5-0.9-2.5-2.7-3.1s-4.3-0.9-7.6-0.9c-4.8,0-8.5,0.9-11.2,2.8
 				   c-2.7,1.8-4.1,4.3-4.1,7.4c0,2.2,0.7,4,2,5.4c1.4,1.4,3.6,2.7,6.8,3.9c3,1.1,5.1,2.1,6.4,2.8c1.3,0.7,2,1.7,2,3
 				   c0,1.1-0.4,1.8-1.1,2.3c-0.8,0.5-1.8,0.7-3.2,0.7c-3.3,0-7.2-0.9-11.5-2.8c-1.1,1.3-1.6,2.6-1.6,4c0,1.8,0.9,3,2.7,3.6
-				   c1.8,0.6,4.8,0.9,9,0.9c4.5,0,8.1-0.9,10.8-2.6c2.7-1.7,4-4.2,4-7.5c0-2.4-0.8-4.4-2.3-5.8C198.3,44.5,195.7,43.2,192.1,41.9z" />
-				<path d="M226,56.1c-3.1,0-5.2-0.8-6.4-2.4c-1.2-1.6-1.9-3.8-1.9-6.7h12.1c2.9,0,4.8-0.5,5.7-1.4c0.9-0.9,1.3-2.5,1.3-4.7
+				   c1.8,0.6,4.8,0.9,9,0.9c4.5,0,8.1-0.9,10.8-2.6c2.7-1.7,4-4.2,4-7.5c0-2.4-0.8-4.4-2.3-5.8C198.3,44.5,195.7,43.2,192.1,41.9z"
+					/>
+					<path
+						d="M226,56.1c-3.1,0-5.2-0.8-6.4-2.4c-1.2-1.6-1.9-3.8-1.9-6.7h12.1c2.9,0,4.8-0.5,5.7-1.4c0.9-0.9,1.3-2.5,1.3-4.7
 				   c0-4.4-1-7.7-3.1-9.7c-2-2.1-5.3-3.1-9.8-3.1c-5.1,0-9.1,1.6-12.1,4.8s-4.5,7.7-4.5,13.4c0,5.5,1.3,9.4,4,11.8s7,3.6,12.9,3.6
 				   c3.4,0,6.4-0.3,9-1s3.8-1.9,3.8-3.6c0-1.3-0.6-2.5-1.7-3.6C232.1,55.3,229,56.1,226,56.1z M218.9,35.7c0.8-1.3,2.1-2,3.7-2
 				   c1.5,0,2.7,0.5,3.5,1.6c0.8,1.1,1.3,2.6,1.3,4.5c0,0.8-0.1,1.3-0.3,1.7s-1,0.6-2.2,0.7c-1.3,0.1-3.1,0.2-5.5,0.2h-1.7
-				   C217.6,39.3,218,37,218.9,35.7z" />
-				<path d="M255,56.8c-0.1-2.8-0.2-7.3-0.2-13.5v-25c0-0.9-0.1-1.6-0.2-2.1c-0.1-0.5-0.6-0.8-1.4-1c-0.8-0.2-2.4-0.3-4.7-0.3
+				   C217.6,39.3,218,37,218.9,35.7z"
+					/>
+					<path
+						d="M255,56.8c-0.1-2.8-0.2-7.3-0.2-13.5v-25c0-0.9-0.1-1.6-0.2-2.1c-0.1-0.5-0.6-0.8-1.4-1c-0.8-0.2-2.4-0.3-4.7-0.3
 				   c-3.7,0-5.9,0.1-6.6,0.4c-0.7,0.2-1,0.8-1,1.7c0,0.9,0.2,1.8,0.6,2.7c1,0,1.7,0.1,2.3,0.4s1,0.9,1.3,1.8c0.2,0.9,0.4,2.6,0.5,5.2
 				   c0.1,2.5,0.1,8.7,0.1,18.6c0,4.7-0.1,8.5-0.2,11.2h-2.7c-0.7,0-1.2,0.1-1.5,0.4c-0.3,0.3-0.5,0.8-0.5,1.4c0,0.8,0.2,1.7,0.6,2.6
-				   h15.9c0.9,0,1.5-0.2,1.8-0.5c0.3-0.3,0.5-0.8,0.5-1.6c0-0.9-0.2-1.7-0.6-2.4H255z" />
-				<path d="M291.8,55.5c-0.4-1.1-0.6-4-0.6-8.8V38c0-3.8-1.1-6.3-3.3-7.6c-2.2-1.3-5.2-2-9-2c-3.2,0-6.2,0.2-9.1,0.5
+				   h15.9c0.9,0,1.5-0.2,1.8-0.5c0.3-0.3,0.5-0.8,0.5-1.6c0-0.9-0.2-1.7-0.6-2.4H255z"
+					/>
+					<path
+						d="M291.8,55.5c-0.4-1.1-0.6-4-0.6-8.8V38c0-3.8-1.1-6.3-3.3-7.6c-2.2-1.3-5.2-2-9-2c-3.2,0-6.2,0.2-9.1,0.5
 				   c-2.8,0.3-4.5,0.7-4.9,1c-0.4,0.3-0.7,0.7-0.7,1.3c0,0.9,0.3,1.9,0.9,3.2c0.6,1.3,1.1,2.1,1.7,2.6s1.5,0.6,2.9,0.3
 				   c1.4-0.3,2.1-0.5,2.2-0.6c0.1-0.1,0.6-0.8,1.4-2.3c1.2-0.3,2.3-0.4,3.3-0.4c1.8,0,3.2,0.6,4.1,1.8c0.9,1.2,1.5,3.5,1.7,6.9h-3.5
 				   c-5.4,0-9.4,0.9-11.9,2.7c-2.5,1.8-3.8,4.5-3.8,8.2c0,2.6,0.7,4.7,2.2,6.1c1.5,1.5,3.8,2.2,6.9,2.2c1.8,0,3.8-0.3,5.9-1
 				   c2.1-0.6,3.9-1.4,5.6-2.2c1.1,1.5,1.8,2.3,2.3,2.5s1.2,0.3,2.1,0.3c2,0,3.5-0.3,4.7-0.8c1.2-0.5,1.7-1.3,1.7-2.2
 				   c0-0.6-0.2-1.2-0.5-1.8C292.9,57,292.2,56.6,291.8,55.5z M282.3,49.8c0,1.5-0.1,2.7-0.4,3.6c-0.3,0.9-0.9,1.6-1.8,2.1
 				   c-0.9,0.5-1.9,0.7-3.1,0.7c-1.5,0-2.6-0.4-3.4-1.1c-0.8-0.7-1.2-1.9-1.2-3.3c0-1.7,0.4-2.8,1.2-3.5s2.1-0.9,3.9-0.9
-				   c1.6,0,3.2,0.2,4.8,0.5V49.8z" />
-				<path d="M321.4,29.1c-0.8,0-1.3,0.2-1.6,0.6s-0.5,1-0.5,1.8c0,0.8,0.2,1.6,0.6,2.4h1.8c-0.2,1.9-1.1,6.1-2.7,12.5s-2.5,9.7-2.8,9.7
+				   c1.6,0,3.2,0.2,4.8,0.5V49.8z"
+					/>
+					<path
+						d="M321.4,29.1c-0.8,0-1.3,0.2-1.6,0.6s-0.5,1-0.5,1.8c0,0.8,0.2,1.6,0.6,2.4h1.8c-0.2,1.9-1.1,6.1-2.7,12.5s-2.5,9.7-2.8,9.7
 				   s-0.9-2.4-1.9-7.1c-1-4.8-1.8-8.9-2.4-12.4c-0.6-3.5-1.1-5.6-1.4-6.3c-0.3-0.7-0.8-1.2-1.6-1.4c-0.8-0.3-2.2-0.4-4.2-0.4
 				   c-3,0-5,0.1-5.9,0.3c-0.9,0.2-1.3,0.8-1.3,1.8c0,0.8,0.2,1.7,0.6,2.7c1,0,1.8,0.1,2.2,0.3c0.5,0.2,0.8,0.6,1.1,1.4
 				   c0.3,0.7,0.6,1.9,1,3.4s1.5,5.8,3.2,12.6c1.7,6.9,2.7,10.4,2.9,10.5c0.3,0.1,2.1,0.2,5.5,0.1c-1.7,5.4-3.6,8.1-5.7,8.2
 				   c-2.1,0.1-5.5-0.3-10.1-1.3c-0.9,1.2-1.4,2.4-1.4,3.8c0,1.2,0.5,2,1.4,2.5c0.9,0.5,2.8,0.7,5.6,0.7c2.8,0,5.3-0.3,7.5-0.8
 				   c2.3-0.5,4.2-1.8,5.9-3.7s4.1-8.2,7.1-18.7c3.1-10.6,5-16.7,5.6-18.5h0.6c0.9,0,1.6-0.2,1.9-0.5c0.4-0.3,0.6-1,0.6-2
-				   c0-0.8-0.2-1.6-0.6-2.3H321.4z" />
-				<path d="M354.7,56.1c-3.1,0-5.2-0.8-6.4-2.4c-1.2-1.6-1.9-3.8-1.9-6.7h12.1c2.9,0,4.8-0.5,5.7-1.4c0.9-0.9,1.3-2.5,1.3-4.7
+				   c0-0.8-0.2-1.6-0.6-2.3H321.4z"
+					/>
+					<path
+						d="M354.7,56.1c-3.1,0-5.2-0.8-6.4-2.4c-1.2-1.6-1.9-3.8-1.9-6.7h12.1c2.9,0,4.8-0.5,5.7-1.4c0.9-0.9,1.3-2.5,1.3-4.7
 				   c0-4.4-1-7.7-3.1-9.7c-2-2.1-5.3-3.1-9.8-3.1c-5.1,0-9.1,1.6-12.1,4.8s-4.5,7.7-4.5,13.4c0,5.5,1.3,9.4,4,11.8s7,3.6,12.9,3.6
 				   c3.4,0,6.4-0.3,9-1s3.8-1.9,3.8-3.6c0-1.3-0.6-2.5-1.7-3.6C360.8,55.3,357.7,56.1,354.7,56.1z M347.6,35.7c0.8-1.3,2.1-2,3.7-2
 				   c1.5,0,2.7,0.5,3.5,1.6c0.8,1.1,1.3,2.6,1.3,4.5c0,0.8-0.1,1.3-0.3,1.7s-1,0.6-2.2,0.7c-1.3,0.1-3.1,0.2-5.5,0.2h-1.7
-				   C346.3,39.3,346.8,37,347.6,35.7z" />
-				<path d="M395.3,28.2c-1.7,0-3.6,0.3-5.9,0.8s-4.7,1.6-7.4,3.3c0.1-1.6,0.1-2.9,0-3.8c-6.6,0.2-10.2,0.4-10.8,0.7
+				   C346.3,39.3,346.8,37,347.6,35.7z"
+					/>
+					<path
+						d="M395.3,28.2c-1.7,0-3.6,0.3-5.9,0.8s-4.7,1.6-7.4,3.3c0.1-1.6,0.1-2.9,0-3.8c-6.6,0.2-10.2,0.4-10.8,0.7
 				   c-0.6,0.2-0.9,0.7-0.9,1.5c0,0.9,0.2,1.7,0.6,2.6c1.4,0,2.4,0.6,3,1.7c0.6,1.1,0.9,4.7,0.9,10.8c0,4.2-0.1,7.9-0.2,11.1h-2.4
 				   c-0.7,0-1.2,0.1-1.5,0.4c-0.3,0.3-0.5,0.8-0.5,1.4c0,0.8,0.2,1.7,0.6,2.6h16.6c0.9,0,1.5-0.2,1.8-0.5c0.3-0.3,0.5-0.8,0.5-1.6
 				   c0-0.9-0.2-1.7-0.6-2.4h-5.1c-0.1-3.2-0.2-7-0.2-11.4c0-4.8,0.4-7.8,1.3-9c0.9-1.2,2.1-1.7,3.7-1.7c1,1.4,1.7,2.1,1.8,2.2
 				   c0.2,0.1,0.9,0,2-0.1c1.2-0.2,2-0.4,2.5-0.8c0.5-0.4,1-1.2,1.3-2.5c0.4-1.3,0.5-2.5,0.5-3.7c0-0.7-0.1-1.1-0.4-1.3
-				   C396.6,28.2,396.1,28.2,395.3,28.2z" />
-				<path d="M411.5,52.7c-1.9,0-3.4,0.4-4.5,1.2c-1.1,0.8-1.6,1.9-1.6,3.4s0.5,2.6,1.5,3.4c1,0.8,2.5,1.2,4.6,1.2
-				   c1.9,0,3.4-0.4,4.5-1.2c1.1-0.8,1.6-1.9,1.6-3.4s-0.5-2.6-1.5-3.4C415.2,53.1,413.6,52.7,411.5,52.7z" />
-				<path d="M446.6,56.3c-2.8,0-4.7-1-5.7-2.9c-1.1-1.9-1.6-4.9-1.6-8.8c0-4,0.5-6.8,1.6-8.4c1.1-1.6,2.7-2.4,5-2.4
+				   C396.6,28.2,396.1,28.2,395.3,28.2z"
+					/>
+					<path
+						d="M411.5,52.7c-1.9,0-3.4,0.4-4.5,1.2c-1.1,0.8-1.6,1.9-1.6,3.4s0.5,2.6,1.5,3.4c1,0.8,2.5,1.2,4.6,1.2
+				   c1.9,0,3.4-0.4,4.5-1.2c1.1-0.8,1.6-1.9,1.6-3.4s-0.5-2.6-1.5-3.4C415.2,53.1,413.6,52.7,411.5,52.7z"
+					/>
+					<path
+						d="M446.6,56.3c-2.8,0-4.7-1-5.7-2.9c-1.1-1.9-1.6-4.9-1.6-8.8c0-4,0.5-6.8,1.6-8.4c1.1-1.6,2.7-2.4,5-2.4
 				   c2.3,0,5.2,0.9,8.8,2.7c1.1-1.4,1.6-2.9,1.6-4.6c0-1.3-0.7-2.3-1.9-2.8c-1.2-0.6-3.5-0.8-6.8-0.8c-6.2,0-10.8,1.6-14,4.9
 				   c-3.1,3.3-4.7,8-4.7,14.1c0,5.4,1.2,9.2,3.6,11.4s6.6,3.3,12.6,3.3c3.1,0,5.8-0.3,8.1-1c2.3-0.7,3.5-1.7,3.5-3.1
-				   c0-1.4-0.5-2.7-1.4-4C451.7,55.4,448.8,56.3,446.6,56.3z" />
-				<path d="M477.8,41.9c-3.1-1.1-5.1-2-5.9-2.7s-1.3-1.6-1.3-2.5c0-0.9,0.3-1.6,1-2.1c0.6-0.5,1.6-0.7,2.9-0.7c2.5,0,6.1,1,10.8,3.1
+				   c0-1.4-0.5-2.7-1.4-4C451.7,55.4,448.8,56.3,446.6,56.3z"
+					/>
+					<path
+						d="M477.8,41.9c-3.1-1.1-5.1-2-5.9-2.7s-1.3-1.6-1.3-2.5c0-0.9,0.3-1.6,1-2.1c0.6-0.5,1.6-0.7,2.9-0.7c2.5,0,6.1,1,10.8,3.1
 				   c1.2-1.6,1.9-3.1,1.9-4.7c0-1.5-0.9-2.5-2.7-3.1s-4.3-0.9-7.6-0.9c-4.8,0-8.5,0.9-11.2,2.8c-2.7,1.8-4.1,4.3-4.1,7.4
 				   c0,2.2,0.7,4,2,5.4c1.4,1.4,3.6,2.7,6.8,3.9c3,1.1,5.1,2.1,6.4,2.8c1.3,0.7,2,1.7,2,3c0,1.1-0.4,1.8-1.1,2.3
 				   c-0.8,0.5-1.8,0.7-3.2,0.7c-3.3,0-7.2-0.9-11.5-2.8c-1.1,1.3-1.6,2.6-1.6,4c0,1.8,0.9,3,2.7,3.6c1.8,0.6,4.8,0.9,9,0.9
-				   c4.5,0,8.1-0.9,10.8-2.6c2.7-1.7,4-4.2,4-7.5c0-2.4-0.8-4.4-2.3-5.8C484,44.5,481.5,43.2,477.8,41.9z" />
-				<path
-					d="M517.7,46c-1.5-1.5-4.1-2.8-7.7-4.1c-3.1-1.1-5.1-2-5.9-2.7c-0.9-0.7-1.3-1.6-1.3-2.5c0-0.9,0.3-1.6,1-2.1
+				   c4.5,0,8.1-0.9,10.8-2.6c2.7-1.7,4-4.2,4-7.5c0-2.4-0.8-4.4-2.3-5.8C484,44.5,481.5,43.2,477.8,41.9z"
+					/>
+					<path
+						d="M517.7,46c-1.5-1.5-4.1-2.8-7.7-4.1c-3.1-1.1-5.1-2-5.9-2.7c-0.9-0.7-1.3-1.6-1.3-2.5c0-0.9,0.3-1.6,1-2.1
 				   c0.6-0.5,1.6-0.7,2.9-0.7c2.5,0,6.1,1,10.8,3.1c1.2-1.6,1.9-3.1,1.9-4.7c0-1.5-0.9-2.5-2.7-3.1s-4.3-0.9-7.6-0.9
 				   c-4.8,0-8.5,0.9-11.2,2.8c-2.7,1.8-4.1,4.3-4.1,7.4c0,2.2,0.7,4,2,5.4c1.4,1.4,3.6,2.7,6.8,3.9c3,1.1,5.1,2.1,6.4,2.8
 				   c1.3,0.7,2,1.7,2,3c0,1.1-0.4,1.8-1.1,2.3c-0.8,0.5-1.8,0.7-3.2,0.7c-3.3,0-7.2-0.9-11.5-2.8c-1.1,1.3-1.6,2.6-1.6,4
-				   c0,1.8,0.9,3,2.7,3.6c1.8,0.6,4.8,0.9,9,0.9c4.5,0,8.1-0.9,10.8-2.6c2.7-1.7,4-4.2,4-7.5C520,49.4,519.2,47.5,517.7,46z" />
-			</g>
-		</svg>
-		<div class="form-row platform-logos">
-			<a href="https://github.com/thisanimus/baselayer.css" title="Github">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="black" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-			</a>
-			<a href="https://www.npmjs.com/package/baselayer.css" title="NPM">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#CC3534" d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"/></svg>
-			</a>
-		</div>
-	</header>
-	<nav class="menu">
-		<ul class="page-nav">
-			<li><a href="#typography">Typography</a></li>
-			<li><a href="#tables">Tables</a></li>
-			<li><a href="#code">Code</a></li>
-			<li><a href="#media">Media</a></li>
-			<li><a href="#content-revealers">Content Revealers</a></li>
-			<li><a href="#forms-inputs">Forms and Inputs</a></li>
-			<li><a href="#buttons">Buttons</a></li>
-		</ul>
-	</nav>
-	<main>
-		<pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer.css"&gt;</code></pre>
-		<p>or</p>
-		<pre>$ npm i baselayer.css</pre>
-		<p><strong>Baselayer.css</strong> is a low-specificity stylesheet for native HTML elements. It requires no classes, and it
-			gives you nothing beyond normalized, styled native HTML elements. There is no grid, there are no components,
-			just the bare basics. </p>
-		<ul>
-			<li>Sensible defaults for native HTML elements (no classes necessary).</li>
-			<li>Visual consistency (CSS custom props FTW)</li>
-			<li>Themeable (see above)</li>
-			<li>Stardards-compliant browser support (press f for ie)</li>
-			<li>Tiny size (~3KB gzipped)</li>
-		</ul>
-		<hr>
-		<div class="label" id="typography">
-			Typography
-		</div>
-		<br>
-		<h1>H1 Heading</h1>
-		<p>Incognito API spy vaporware chmod serverless resource. Build tool Twitter accessibility legacy Linux spy
-			gate-keeping CS degree distributed systems. Little Bobby Tables Cloudfront var cross-post lang graph
-			instance injection. Compile keycaps blockchain composition k virtual DOM DAG interface. Rm -rf * brownfield
-			pull request variable architecture engineer JQuery Slack cloud legacy.</p>
-		<p>Shareware resolve compile JSON tech debt programmer spaghetti code blockchain CSS grid. Documentation driven
-			bootcamp bootcamp animation backend scalable ecommerce platform. Ubuntu lazy load code-splitting Slack yarn
-			JavaScript Byzantine fault tolerance driver one-size-fits-all approach. Continuous integration Ada Lovelace
-			Ubuntu Safari homebrew functional programming big O LGTM fault tolerant.</p>
-		<h2>H2 Heading</h2>
-		<h3>Maybe you want to add an h3 Heading as a subtitle, and you just wish the spacing looked good.</h3>
-		<p>Cache Edge lang command-line engineer concurrent tabs vs spaces. Stateless Ubuntu child CSS-in-JS parent
-			virtual DOM one-size-fits-all approach document object model remote. Cherry pick database design lazy eval
-			OOP atomic design MIT license resolve k JQuery.</p>
-		<ul>
-			<li><strong>Rails:</strong> Rails is a full-stack framework. It ships with all the tools needed to build
-				amazing web apps on both the front and back end.</li>
-			<li><strong>PHP:</strong> PHP is a popular general-purpose scripting language that is especially suited to
-				web development.</li>
-			<li>
-				<strong>JavaScript:</strong> JavaScript, often abbreviated JS, is a programming language that is one of
-				the core technologies of the World Wide Web, alongside HTML and CSS
-				<ul>
-					<li>Node.js</li>
-					<li>React</li>
-					<li>Vue</li>
-				</ul>
-			</li>
-			<li><strong>Rust:</strong> Rust is a multi-paradigm, general-purpose programming language designed for
-				performance and safety, especially safe concurrency.</li>
-		</ul>
-		<h3>H3 Heading</h3>
-		<p>Antipattern j package manager SRE machine learning merge sort. Internet button class Internet Explorer mobile
-			app polemical thinking k data store greedy algorithm contribution +1. Key-value injection array
-			code-splitting npm private object library raspberry pi Github.</p>
-		<ol>
-			<li>First</li>
-			<li>Second</li>
-			<li>Third</li>
-			<li>Fourth</li>
-			<li>Fifth</li>
-			<li>Sixth</li>
-			<li>Seventh</li>
-			<li>Eighth</li>
-			<li>Ninth</li>
-			<li>Tenth</li>
-			<li>Eleventh</li>
-		</ol>
-		<p>Linker maintainable pull request module remote commit Safari. Elixir GraphQL bike-shedding callback CS degree
-			devops j coding abstraction websockets. Atomic design DOM blog spy module casting MVP. Scalable blockchain
-			attributes Ruby views sudo behavior-driven engineer circle back contribution. MIT license maintainable build
-			tool Angular Byzantine fault tolerance callback hell dependency injection asynchronous infrastructure.</p>
-		<blockquote>
-			<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that
-				is set off from the main text as a paragraph, or block of text.</p>
-			<p>It is typically distinguished visually using indentation and a different typeface or smaller size
-				quotation. It may or may not include a citation, usually placed at the bottom.</p><cite><a
-					href="#!">Said no one, ever.</a></cite>
-		</blockquote>
-		<h2>Inline Elements</h2>
-		<p><a href="#!">This is a text link</a>.</p>
-		<p><strong>Strong is used to indicate strong importance.</strong></p>
-		<p><em>This text has added emphasis.</em></p>
-		<p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
-		<p>The <i>i element</i> is text that is offset from the normal text.</p>
-		<p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
-		<p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
-		<p><s>This text has a strikethrough</s>.</p>
-		<p>Superscript<sup>®</sup>.</p>
-		<p>Subscript for things like H<sub>2</sub>O.</p>
-		<p><small>This small text is small for for fine print, etc.</small></p>
-		<p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
-		<p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q>
-		</p>
-		<p><cite>This is a citation.</cite></p>
-		<p>The <dfn>dfn element</dfn> indicates a definition.</p>
-		<p>The <mark>mark element</mark> indicates a highlight.</p>
-		<p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
-		<p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
-		<hr>
-		<div class="label" id="tables">
-			tables
-		</div><br>
-		<h2>Table</h2>
-		<table>
-			<caption>
-				Table Caption
-			</caption>
-			<thead>
-				<tr>
-					<th>Heading 1</th>
-					<th>Heading 2</th>
-					<th>Heading 3</th>
-					<th>Heading 4</th>
-					<th>Heading 5</th>
-				</tr>
-			</thead>
-			<tfoot>
-				<tr>
-					<th>Footer 1</th>
-					<th>Footer 2</th>
-					<th>Footer 3</th>
-					<th>Footer 4</th>
-					<th>Footer 5</th>
-				</tr>
-			</tfoot>
-			<tbody>
-				<tr>
-					<td>Table Cell 1</td>
-					<td>Table Cell 2</td>
-					<td>Table Cell 3</td>
-					<td>Table Cell 4</td>
-					<td>Table Cell 5</td>
-				</tr>
-				<tr>
-					<td>Table Cell 1</td>
-					<td>Table Cell 2</td>
-					<td>Table Cell 3</td>
-					<td>Table Cell 4</td>
-					<td>Table Cell 5</td>
-				</tr>
-				<tr>
-					<td>Table Cell 1</td>
-					<td>Table Cell 2</td>
-					<td>Table Cell 3</td>
-					<td>Table Cell 4</td>
-					<td>Table Cell 5</td>
-				</tr>
-				<tr>
-					<td>Table Cell 1</td>
-					<td>Table Cell 2</td>
-					<td>Table Cell 3</td>
-					<td>Table Cell 4</td>
-					<td>Table Cell 5</td>
-				</tr>
-			</tbody>
-		</table>
-		<hr>
-		<div class="label" id="code">
-			Code
-		</div><br>
-		<h2>Pre + Code</h2>
-		<pre><code>require 'redcarpet'
+				   c0,1.8,0.9,3,2.7,3.6c1.8,0.6,4.8,0.9,9,0.9c4.5,0,8.1-0.9,10.8-2.6c2.7-1.7,4-4.2,4-7.5C520,49.4,519.2,47.5,517.7,46z"
+					/>
+				</g>
+			</svg>
+			<div class="form-row platform-logos">
+				<a href="https://github.com/thisanimus/baselayer.css" title="Github">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+						<path
+							fill="black"
+							d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+						/>
+					</svg>
+				</a>
+				<a href="https://www.npmjs.com/package/baselayer.css" title="NPM">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+						<path
+							fill="#CC3534"
+							d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"
+						/>
+					</svg>
+				</a>
+			</div>
+		</header>
+		<nav class="menu">
+			<ul class="page-nav">
+				<li><a href="#typography">Typography</a></li>
+				<li><a href="#tables">Tables</a></li>
+				<li><a href="#code">Code</a></li>
+				<li><a href="#media">Media</a></li>
+				<li><a href="#content-revealers">Content Revealers</a></li>
+				<li><a href="#forms-inputs">Forms and Inputs</a></li>
+				<li><a href="#buttons">Buttons</a></li>
+			</ul>
+		</nav>
+		<main>
+			<pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer.css"&gt;</code></pre>
+			<p>or</p>
+			<pre>$ npm i baselayer.css</pre>
+			<p>
+				<strong>Baselayer.css</strong> is a low-specificity stylesheet for native HTML elements. It requires no classes,
+				and it gives you nothing beyond normalized, styled native HTML elements. There is no grid, there are no
+				components, just the bare basics.
+			</p>
+			<ul>
+				<li>Sensible defaults for native HTML elements (no classes necessary).</li>
+				<li>Visual consistency (CSS custom props FTW)</li>
+				<li>Themeable (see above)</li>
+				<li>Stardards-compliant browser support (press f for ie)</li>
+				<li>Tiny size (~3KB gzipped)</li>
+			</ul>
+			<hr />
+			<div class="label" id="typography">Typography</div>
+			<br />
+			<h1>H1 Heading</h1>
+			<p>
+				Incognito API spy vaporware chmod serverless resource. Build tool Twitter accessibility legacy Linux spy
+				gate-keeping CS degree distributed systems. Little Bobby Tables Cloudfront var cross-post lang graph instance
+				injection. Compile keycaps blockchain composition k virtual DOM DAG interface. Rm -rf * brownfield pull request
+				variable architecture engineer JQuery Slack cloud legacy.
+			</p>
+			<p>
+				Shareware resolve compile JSON tech debt programmer spaghetti code blockchain CSS grid. Documentation driven
+				bootcamp bootcamp animation backend scalable ecommerce platform. Ubuntu lazy load code-splitting Slack yarn
+				JavaScript Byzantine fault tolerance driver one-size-fits-all approach. Continuous integration Ada Lovelace
+				Ubuntu Safari homebrew functional programming big O LGTM fault tolerant.
+			</p>
+			<h2>H2 Heading</h2>
+			<h3>Maybe you want to add an h3 Heading as a subtitle, and you just wish the spacing looked good.</h3>
+			<p>
+				Cache Edge lang command-line engineer concurrent tabs vs spaces. Stateless Ubuntu child CSS-in-JS parent virtual
+				DOM one-size-fits-all approach document object model remote. Cherry pick database design lazy eval OOP atomic
+				design MIT license resolve k JQuery.
+			</p>
+			<ul>
+				<li>
+					<strong>Rails:</strong> Rails is a full-stack framework. It ships with all the tools needed to build amazing
+					web apps on both the front and back end.
+				</li>
+				<li>
+					<strong>PHP:</strong> PHP is a popular general-purpose scripting language that is especially suited to web
+					development.
+				</li>
+				<li>
+					<strong>JavaScript:</strong> JavaScript, often abbreviated JS, is a programming language that is one of the
+					core technologies of the World Wide Web, alongside HTML and CSS
+					<ul>
+						<li>Node.js</li>
+						<li>React</li>
+						<li>Vue</li>
+					</ul>
+				</li>
+				<li>
+					<strong>Rust:</strong> Rust is a multi-paradigm, general-purpose programming language designed for performance
+					and safety, especially safe concurrency.
+				</li>
+			</ul>
+			<h3>H3 Heading</h3>
+			<p>
+				Antipattern j package manager SRE machine learning merge sort. Internet button class Internet Explorer mobile
+				app polemical thinking k data store greedy algorithm contribution +1. Key-value injection array code-splitting
+				npm private object library raspberry pi Github.
+			</p>
+			<ol>
+				<li>First</li>
+				<li>Second</li>
+				<li>Third</li>
+				<li>Fourth</li>
+				<li>Fifth</li>
+				<li>Sixth</li>
+				<li>Seventh</li>
+				<li>Eighth</li>
+				<li>Ninth</li>
+				<li>Tenth</li>
+				<li>Eleventh</li>
+			</ol>
+			<p>
+				Linker maintainable pull request module remote commit Safari. Elixir GraphQL bike-shedding callback CS degree
+				devops j coding abstraction websockets. Atomic design DOM blog spy module casting MVP. Scalable blockchain
+				attributes Ruby views sudo behavior-driven engineer circle back contribution. MIT license maintainable build
+				tool Angular Byzantine fault tolerance callback hell dependency injection asynchronous infrastructure.
+			</p>
+			<blockquote>
+				<p>
+					A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is
+					set off from the main text as a paragraph, or block of text.
+				</p>
+				<p>
+					It is typically distinguished visually using indentation and a different typeface or smaller size quotation.
+					It may or may not include a citation, usually placed at the bottom.
+				</p>
+				<cite><a href="#!">Said no one, ever.</a></cite>
+			</blockquote>
+			<h2>Inline Elements</h2>
+			<p><a href="#!">This is a text link</a>.</p>
+			<p><strong>Strong is used to indicate strong importance.</strong></p>
+			<p><em>This text has added emphasis.</em></p>
+			<p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+			<p>The <i>i element</i> is text that is offset from the normal text.</p>
+			<p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+			<p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+			<p><s>This text has a strikethrough</s>.</p>
+			<p>Superscript<sup>®</sup>.</p>
+			<p>Subscript for things like H<sub>2</sub>O.</p>
+			<p><small>This small text is small for for fine print, etc.</small></p>
+			<p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+			<p>
+				<q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q>
+			</p>
+			<p><cite>This is a citation.</cite></p>
+			<p>The <dfn>dfn element</dfn> indicates a definition.</p>
+			<p>The <mark>mark element</mark> indicates a highlight.</p>
+			<p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+			<p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+			<hr />
+			<div class="label" id="tables">tables</div>
+			<br />
+			<h2>Table</h2>
+			<table>
+				<caption>
+					Table Caption
+				</caption>
+				<thead>
+					<tr>
+						<th>Heading 1</th>
+						<th>Heading 2</th>
+						<th>Heading 3</th>
+						<th>Heading 4</th>
+						<th>Heading 5</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<th>Footer 1</th>
+						<th>Footer 2</th>
+						<th>Footer 3</th>
+						<th>Footer 4</th>
+						<th>Footer 5</th>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>Table Cell 1</td>
+						<td>Table Cell 2</td>
+						<td>Table Cell 3</td>
+						<td>Table Cell 4</td>
+						<td>Table Cell 5</td>
+					</tr>
+					<tr>
+						<td>Table Cell 1</td>
+						<td>Table Cell 2</td>
+						<td>Table Cell 3</td>
+						<td>Table Cell 4</td>
+						<td>Table Cell 5</td>
+					</tr>
+					<tr>
+						<td>Table Cell 1</td>
+						<td>Table Cell 2</td>
+						<td>Table Cell 3</td>
+						<td>Table Cell 4</td>
+						<td>Table Cell 5</td>
+					</tr>
+					<tr>
+						<td>Table Cell 1</td>
+						<td>Table Cell 2</td>
+						<td>Table Cell 3</td>
+						<td>Table Cell 4</td>
+						<td>Table Cell 5</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr />
+			<div class="label" id="code">Code</div>
+			<br />
+			<h2>Pre + Code</h2>
+			<pre><code>require 'redcarpet'
 	markdown = Redcarpet.new("Hello World!")
-	puts markdown.to_html</code></pre><br>
-		<h2>Pre</h2>
-		<pre>P R E F O R M A T T E D T E X T
+	puts markdown.to_html</code></pre>
+			<br />
+			<h2>Pre</h2>
+			<pre>
+P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /
 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
 @ A B C D E F G H I J K L M N O
 P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
-p q r s t u v w x y z { | } ~ </pre>
-		<hr>
-		<div class="label" id="media">
-			Media
-		</div><br>
-		<h2>img</h2><img loading="lazy" alt="The cutest catto you ever did see."
-			src="https://placekitten.com/1600/900"><br>
-		<h2>figure</h2>
-		<figure>
-			<img loading="lazy" alt="The cutest catto you ever did see." src="https://placekitten.com/800/450">
-			<figcaption>
-				The cutest catto you ever did see.
-			</figcaption>
-		</figure><br>
-		<h2>video</h2><video autoplay="" loop="" loading="lazy"
-			poster="https://deepspacerobots.com/assets/video/galaxy-poster.webp" preload="auto">
-			<source src="https://deepspacerobots.com/assets/video/galaxy.mp4" type="video/mp4">
-		</video><br>
-		<h2>iframe</h2><iframe loading="lazy" title="strobe" allowfullscreen class="embed-16-9" frameborder="0" height="360"
-			src="https://player.vimeo.com/video/32910921?h=a736aa943b&color=ffffff" title="Vimeo video player"
-			width="640"></iframe>
-		<hr>
-		<div class="label" id="content-revealers">
-			Content Revealers
-		</div>
-		<br>
-		<h2>Dialog</h2>
-		<dialog id="pop-up">
-			<p>Hey there! This is a dialog</p>
-			<form method="dialog">
-				<button>Close</button>
-			</form>
-		</dialog>
-		<p>
-		<button data-trigger-dialog="pop-up" onClick="openPopup(this)">Open dialog box</button>
-		<script>
-			function openPopup(target){
-				const dialog = document.getElementById(target.dataset.triggerDialog);
-				dialog.showModal()
-			}
-		</script>
-		</p>
-		
-		<h2>Details</h2>
-		<details>
-			<summary>Click for more Details</summary>
-			<p>Ruby views sudo behavior-driven engineer circle back contribution. MIT license maintainable build
-			tool Angular Byzantine fault tolerance callback hell.</p>
-		</details>
-		<hr>
-		<div class="label" id="forms-inputs">
-			Forms and Inputs
-		</div>
-		<br>
-		<form action="#" method="post">
-			<h2>Checkbox</h2>
-			<div>
-				<input id="html" name="html" type="checkbox" value="HTML"> <label for="html">HTML</label>
-			</div>
-			<div>
-				<input id="css" name="css" type="checkbox" value="CSS"> <label for="css">CSS</label>
-			</div>
-			<div>
-				<input id="js" name="js" type="checkbox" value="JS"> <label for="js">JS</label>
-			</div><br>
-			<h2>Radio</h2>
-			<div>
-				<input id="radio-html" name="radio" type="radio" value="HTML"> <label for="radio-html">HTML</label>
-			</div>
-			<div>
-				<input id="radio-css" name="radio" type="radio" value="CSS"> <label for="radio-css">CSS</label>
-			</div>
-			<div>
-				<input id="radio-js" name="radio" type="radio" value="JS"> <label for="radio-js">JS</label>
-			</div><br>
-			<h2>Basic Form</h2>
-			<div class="form-row">
-				<label>First Name* <input id="firstName" name="firstName" placeholder="Jane" required=""
-						type="text"></label> <label for="lastName">Last Name* <input id="lastName" name="lastName"
-						placeholder="Smith" required="" type="text"></label>
-			</div>
-			<div class="form-row">
-				<label>Phone* <input id="phone" name="phone" placeholder="(123) 456-7890" required=""
-						type="tel"></label> <label for="email">Email* <input id="email" name="email"
-						placeholder="janesmith@domain.com" required="" type="email"></label>
-			</div>
-			<label for="snack">Favorite Snack</label>
+p q r s t u v w x y z { | } ~ </pre
+			>
+			<hr />
+			<div class="label" id="media">Media</div>
+			<br />
+			<h2>img</h2>
+			<img loading="lazy" alt="The cutest catto you ever did see." src="https://placecats.com/1600/900" /><br />
+			<h2>figure</h2>
+			<figure>
+				<img loading="lazy" alt="The cutest catto you ever did see." src="https://placecats.com/800/450" />
+				<figcaption>The cutest catto you ever did see.</figcaption>
+			</figure>
+			<br />
+			<h2>video</h2>
+			<video
+				autoplay=""
+				loop=""
+				loading="lazy"
+				poster="https://deepspacerobots.com/assets/video/galaxy-poster.webp"
+				preload="auto"
+			>
+				<source src="https://deepspacerobots.com/assets/video/galaxy.mp4" type="video/mp4" /></video
+			><br />
+			<h2>iframe</h2>
+			<iframe
+				loading="lazy"
+				title="strobe"
+				allowfullscreen
+				class="embed-16-9"
+				frameborder="0"
+				height="360"
+				src="https://player.vimeo.com/video/32910921?h=a736aa943b&color=ffffff"
+				title="Vimeo video player"
+				width="640"
+			></iframe>
+			<hr />
+			<div class="label" id="content-revealers">Content Revealers</div>
+			<br />
+			<h2>Dialog</h2>
+			<dialog id="pop-up">
+				<p>Hey there! This is a dialog</p>
+				<form method="dialog">
+					<button>Close</button>
+				</form>
+			</dialog>
+			<p>
+				<button data-trigger-dialog="pop-up" onClick="openPopup(this)">Open dialog box</button>
+				<script>
+					function openPopup(target) {
+						const dialog = document.getElementById(target.dataset.triggerDialog);
+						dialog.showModal();
+					}
+				</script>
+			</p>
+
+			<h2>Details</h2>
+			<details>
+				<summary>Click for more Details</summary>
+				<p>
+					Ruby views sudo behavior-driven engineer circle back contribution. MIT license maintainable build tool Angular
+					Byzantine fault tolerance callback hell.
+				</p>
+			</details>
+			<hr />
+			<div class="label" id="forms-inputs">Forms and Inputs</div>
+			<br />
+			<form action="#" method="post">
+				<h2>Checkbox</h2>
+				<div><input id="html" name="html" type="checkbox" value="HTML" /> <label for="html">HTML</label></div>
+				<div><input id="css" name="css" type="checkbox" value="CSS" /> <label for="css">CSS</label></div>
+				<div><input id="js" name="js" type="checkbox" value="JS" /> <label for="js">JS</label></div>
+				<br />
+				<h2>Radio</h2>
+				<div><input id="radio-html" name="radio" type="radio" value="HTML" /> <label for="radio-html">HTML</label></div>
+				<div><input id="radio-css" name="radio" type="radio" value="CSS" /> <label for="radio-css">CSS</label></div>
+				<div><input id="radio-js" name="radio" type="radio" value="JS" /> <label for="radio-js">JS</label></div>
+				<br />
+				<h2>Basic Form</h2>
+				<div class="form-row">
+					<label
+						>First Name* <input id="firstName" name="firstName" placeholder="Jane" required="" type="text"
+					/></label>
+					<label for="lastName"
+						>Last Name* <input id="lastName" name="lastName" placeholder="Smith" required="" type="text"
+					/></label>
+				</div>
+				<div class="form-row">
+					<label>Phone* <input id="phone" name="phone" placeholder="(123) 456-7890" required="" type="tel" /></label>
+					<label for="email"
+						>Email* <input id="email" name="email" placeholder="janesmith@domain.com" required="" type="email"
+					/></label>
+				</div>
+				<label for="snack">Favorite Snack</label>
 				<select id="snack" name="snack">
 					<option selected disabled>Choose your favorite snack</option>
 					<option value="chips">Chips</option>
@@ -414,52 +485,63 @@ p q r s t u v w x y z { | } ~ </pre>
 				<fieldset>
 					<legend>More Form Inputs</legend>
 
-					<label>Color
-						<input id="color" name="color" type="color" vlaue="#a63f44">
+					<label
+						>Color
+						<input id="color" name="color" type="color" vlaue="#a63f44" />
 					</label>
 
 					<div class="form-row">
-						<label>Date
+						<label
+							>Date
 							<input id="date" name="date" type="date" />
 						</label>
-						<label>Datetime Local
+						<label
+							>Datetime Local
 							<input id="datetime" name="datetime" type="datetime-local" />
 						</label>
 					</div>
-					<label>File
-						<input id="file" name="file" type="file">
+					<label
+						>File
+						<input id="file" name="file" type="file" />
 					</label>
-					<label>Number
-						<input id="number" name="numer" type="number" value="1">
+					<label
+						>Number
+						<input id="number" name="numer" type="number" value="1" />
 					</label>
-					<label>Password
-						<input autocomplete="current-password" id="password" name="password" type="password">
+					<label
+						>Password
+						<input autocomplete="current-password" id="password" name="password" type="password" />
 					</label>
-					<label for="volume">Range:
+					<label for="volume"
+						>Range:
 						<output for="volume" name="volume_output">0</output>
 					</label>
-					<input id="volume" max="11" min="0" name="volume" oninput="volume_output.value = volume.value"
-						type="range" value="0">
+					<input
+						id="volume"
+						max="11"
+						min="0"
+						name="volume"
+						oninput="volume_output.value = volume.value"
+						type="range"
+						value="0"
+					/>
 					<label for="search">Search</label>
 					<div class="input-row">
-						<input id="search" name="search" placeholder="Type your search here" type="search">
+						<input id="search" name="search" placeholder="Type your search here" type="search" />
 						<button type="button">Search</button>
 					</div>
 				</fieldset>
-		</form>
-		<hr>
-		<div class="label" id="buttons">
-			Buttons
-		</div><br>
-		<div class="button-group">
-			<button>Button</button> <a class="button" href="#buttons">link</a> <input type="submit" value="input">
-		</div>
-		<div class="button-group">
-			<button class="button-accent">Button</button> <a class="button button-accent" href="#buttons">link</a>
-			<input class="button-accent" type="submit" value="input">
-		</div>
-	</main>
-
-</body>
-
+			</form>
+			<hr />
+			<div class="label" id="buttons">Buttons</div>
+			<br />
+			<div class="button-group">
+				<button>Button</button> <a class="button" href="#buttons">link</a> <input type="submit" value="input" />
+			</div>
+			<div class="button-group">
+				<button class="button-accent">Button</button> <a class="button button-accent" href="#buttons">link</a>
+				<input class="button-accent" type="submit" value="input" />
+			</div>
+		</main>
+	</body>
 </html>
