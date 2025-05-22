@@ -36,7 +36,7 @@
 	--font-serif: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 }
 html {
-	font-size: clamp(1rem, calc(0.9rem + 0.5vw), 1.3rem);
+	font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
 	scroll-behavior: smooth;
 }
 
